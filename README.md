@@ -92,4 +92,4 @@ Crespillo López, Vicente-Serrano and Gimeno (2026), *Journal of Hydrology* 680,
 https://doi.org/10.5281/zenodo.22755834.
 
 Contact: Ishmeal Quist, Nanjing University of Information Science and Technology
-(quistishmeal@nuist.edu.cn/ishmealquistgcma@gmail.com).
+(quistishmeal@nuist.edu.cn; ishmealquistgcma@gmail.com).
