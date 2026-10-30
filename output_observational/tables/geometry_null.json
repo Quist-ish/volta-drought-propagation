@@ -1,0 +1,29 @@
+{
+ "observed": {
+  "near": 3,
+  "relay": 3,
+  "nested": 4
+ },
+ "null_mean_counts": {
+  "near": 0.867,
+  "relay": 2.095,
+  "nested": 3.03,
+  "pairs": 5.992
+ },
+ "null_pooled_share": {
+  "near": 0.145,
+  "relay": 0.35,
+  "nested": 0.506
+ },
+ "p_relay_ge_obs": 0.346,
+ "p_near_ge_obs": 0.0686,
+ "p_nested_ge_obs": 0.3523,
+ "n_perm": 19999,
+ "seed": 2026,
+ "given_10_pairs": {
+  "n": 973,
+  "near": 1.39,
+  "relay": 3.672,
+  "nested": 4.938
+ }
+}

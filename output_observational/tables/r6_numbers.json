@@ -1,0 +1,156 @@
+{
+  "m_sensitivity": [
+    {
+      "M": 3,
+      "n_origin_events": 104,
+      "n_opportunities": 40,
+      "n_connected": 12,
+      "n_pairs": 13,
+      "coverage": 0.3846,
+      "cf_all": 0.1154,
+      "cf_opp": 0.3,
+      "mean_k_observing": 1.675,
+      "p_link": 0.1945,
+      "mean_chain_size": 2.0833,
+      "mean_pf_published": 0.4083,
+      "mean_pf_observing": 0.8083,
+      "p_cf_all": 0.195,
+      "p_cf_opp": 0.0195,
+      "p_p_link": 0.0505,
+      "null_cf_all": 0.0824,
+      "null_cf_opp": 0.148,
+      "null_p_link": 0.1043,
+      "connected_events": "Vonkoro #4; Bamboi #1; Bamboi #9; Nawuni #2; Nawuni #21; Nawuni #23; Nawuni #26; Nawuni #27; Nawuni #28; Pwalagu #9; Porga #5; Porga #14",
+      "shared_with_M5": 10
+    },
+    {
+      "M": 5,
+      "n_origin_events": 104,
+      "n_opportunities": 40,
+      "n_connected": 10,
+      "n_pairs": 10,
+      "coverage": 0.3846,
+      "cf_all": 0.0962,
+      "cf_opp": 0.25,
+      "mean_k_observing": 1.675,
+      "p_link": 0.1617,
+      "mean_chain_size": 2.0,
+      "mean_pf_published": 0.4,
+      "mean_pf_observing": 0.745,
+      "p_cf_all": 0.2475,
+      "p_cf_opp": 0.0395,
+      "p_p_link": 0.0795,
+      "null_cf_all": 0.074,
+      "null_cf_opp": 0.1327,
+      "null_p_link": 0.093,
+      "connected_events": "Vonkoro #4; Bamboi #1; Bamboi #9; Nawuni #2; Nawuni #21; Nawuni #23; Nawuni #26; Nawuni #27; Pwalagu #9; Porga #14",
+      "shared_with_M5": 10
+    },
+    {
+      "M": 7,
+      "n_origin_events": 104,
+      "n_opportunities": 40,
+      "n_connected": 8,
+      "n_pairs": 8,
+      "coverage": 0.3846,
+      "cf_all": 0.0769,
+      "cf_opp": 0.2,
+      "mean_k_observing": 1.675,
+      "p_link": 0.1291,
+      "mean_chain_size": 2.0,
+      "mean_pf_published": 0.4125,
+      "mean_pf_observing": 0.6813,
+      "p_cf_all": 0.207,
+      "p_cf_opp": 0.034,
+      "p_p_link": 0.0595,
+      "null_cf_all": 0.0542,
+      "null_cf_opp": 0.0978,
+      "null_p_link": 0.0682,
+      "connected_events": "Vonkoro #4; Bamboi #1; Bamboi #9; Nawuni #2; Nawuni #23; Nawuni #26; Nawuni #27; Pwalagu #9",
+      "shared_with_M5": 8
+    }
+  ],
+  "screened_network": {
+    "stations": [
+      "Prang",
+      "Nawuni",
+      "Sabari",
+      "Dapola"
+    ],
+    "rivers": [
+      "Pru",
+      "White Volta",
+      "Oti",
+      "Black Volta"
+    ],
+    "directed_links": 0,
+    "origin_stations": 0,
+    "events_at_screened_stations": 52,
+    "statistics": null
+  },
+  "censoring_in_chains": {
+    "pairs": 10,
+    "origin_censored": 1,
+    "upstream_censored": 3,
+    "either": 4,
+    "which": [
+      {
+        "origin": "Bamboi",
+        "origin_eid": 1,
+        "upstream": "Lawra",
+        "upstream_eid": 3,
+        "origin_censored": true,
+        "upstream_censored": false
+      },
+      {
+        "origin": "Nawuni",
+        "origin_eid": 26,
+        "upstream": "Yagaba",
+        "upstream_eid": 4,
+        "origin_censored": false,
+        "upstream_censored": true
+      },
+      {
+        "origin": "Pwalagu",
+        "origin_eid": 9,
+        "upstream": "Yarugu",
+        "upstream_eid": 8,
+        "origin_censored": false,
+        "upstream_censored": true
+      },
+      {
+        "origin": "Porga",
+        "origin_eid": 14,
+        "upstream": "Samboali",
+        "upstream_eid": 2,
+        "origin_censored": false,
+        "upstream_censored": true
+      }
+    ],
+    "events_censored_total": 20,
+    "events_total": 174,
+    "opportunities_with_censored_origin": 3,
+    "opportunities": 40,
+    "cf_opp_excluding_censored": 0.2432,
+    "n_opp_excluding_censored": 37
+  },
+  "terrain_connectivity": {
+    "gauges_compared": 18,
+    "grdc_links": 22,
+    "terrain_links": 22,
+    "links_in_both": 22,
+    "grdc_only": [],
+    "terrain_only": [],
+    "stations_agreeing": 18,
+    "matched_by_location_only": {},
+    "lawra_dapola": {
+      "terrain_order": "Lawra upstream of Dapola",
+      "along_channel_km": 11.9,
+      "grdc_pointer": "Lawra -> Dapola",
+      "grdc_area_dapola": 66540.0,
+      "grdc_area_lawra": 93820.0,
+      "tdx_area_lawra": 100750.0,
+      "tdx_area_dapola": 100929.0
+    }
+  }
+}

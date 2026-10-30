@@ -1,0 +1,7 @@
+M_days,n_origin_events,connected_events_pct,flip_vs_reference_pct,spearman_rho_vs_reference,mean_delta_chain,mean_chain_size,is_reference
+1,104,12.5,2.88,0.8652,0.0385,1.077,False
+3,104,11.54,1.92,0.9046,0.0288,1.083,False
+5,104,9.62,0.0,1.0,0.0,1.0,True
+7,104,7.69,1.92,0.8851,-0.0192,1.0,False
+10,104,5.77,3.85,0.7586,-0.0385,1.0,False
+15,104,3.85,5.77,0.6132,-0.0577,1.0,False

@@ -1,0 +1,8 @@
+variant,defined_pct,events,rate,events_onset_nov_apr,pct_onset_nov_apr,mean_duration,max_duration,origin_events,opportunities,chains,cf_opportunities,mean_pf,max_chain_size
+"default (40%, 0.10 m3/s)",77.1,174,1.198,32,18.4,22.6,188,104,40,10,0.25,0.4,2
+mask off,93.4,174,0.988,32,18.4,22.6,188,104,51,10,0.196,0.4,2
+zero fraction 30%,71.3,174,1.295,32,18.4,22.6,188,104,38,10,0.263,0.4,2
+zero fraction 50%,81.0,174,1.139,32,18.4,22.6,188,104,41,10,0.244,0.4,2
+median floor 0.05,77.1,174,1.197,32,18.4,22.6,188,104,40,10,0.25,0.4,2
+median floor 0.20,76.9,174,1.2,32,18.4,22.6,188,104,40,10,0.25,0.4,2
+Apr-Oct only,51.3,152,1.571,10,6.6,18.3,80,90,36,10,0.278,0.4,2

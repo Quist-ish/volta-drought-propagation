@@ -1,0 +1,7 @@
+Attribute,Sample,n,Spearman ρ,95% CI,p (permutation),Holm-adjusted p
+Soil water content,All,16,+0.132,-0.406 to +0.636,0.630,1.000
+Soil water content,Exclusions,13,+0.127,-0.445 to +0.743,0.669,Not applied
+Aridity,All,16,+0.095,-0.438 to +0.619,0.726,1.000
+Aridity,Exclusions,13,+0.069,-0.541 to +0.724,0.825,Not applied
+Mean channel-network slope,All,16,+0.057,-0.524 to +0.693,0.834,1.000
+Mean channel-network slope,Exclusions,13,+0.015,-0.595 to +0.699,0.962,Not applied

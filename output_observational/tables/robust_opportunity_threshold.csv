@@ -1,0 +1,5 @@
+min_defined_days,origin_events,opportunities,pct_without_observing_upstream,cf_opportunities,wilson_lo,wilson_hi,p_below_ebro
+1,104,41,60.6,0.244,0.138,0.393,2.844800904064321e-05
+5,104,40,61.5,0.25,0.142,0.402,5.0020216528051984e-05
+10,104,39,62.5,0.256,0.146,0.411,8.729937693256019e-05
+20,104,37,64.4,0.27,0.154,0.43,0.0002596125129503988

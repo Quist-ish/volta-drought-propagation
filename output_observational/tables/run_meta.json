@@ -1,0 +1,14 @@
+{
+  "period": [
+    "1961-01-01",
+    "2007-12-31"
+  ],
+  "n_obs": 68859,
+  "n_observed": 67532,
+  "n_filled_tier1": 1327,
+  "n_stations": 18,
+  "n_origin_stations": 8,
+  "n_events": 174,
+  "n_pairs": 10,
+  "n_chains": 10
+}

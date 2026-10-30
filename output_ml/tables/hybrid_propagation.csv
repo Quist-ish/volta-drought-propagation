@@ -1,0 +1,4 @@
+series,n_events,n_origin_events,n_opportunities,n_connected,cf_opp,p_link,p_cf_opp,p_p_link
+observed,174,104,40,10,0.25,0.1617,0.0395,0.0795
+"hybrid, within spans",208,118,86,21,0.244,0.1068,0.147,0.4255
+"hybrid, full 1961-2007",229,126,123,31,0.252,0.089,0.147,0.3905

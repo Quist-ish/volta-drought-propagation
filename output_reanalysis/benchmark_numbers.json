@@ -1,0 +1,100 @@
+{
+  "benchmark": {
+    "gauges": 18,
+    "KGE_median": 0.23,
+    "KGE_range": [
+      -0.24,
+      0.55
+    ],
+    "KGE_r_median": 0.54,
+    "KGE_beta_median": 0.7,
+    "logNSE_median": 0.34,
+    "pbias_median": -29.7,
+    "Q10_ratio_median": 0.85,
+    "rho_SSI_comasked_median": 0.3,
+    "rho_SSI_full_median": 0.29,
+    "kappa_median": 0.02,
+    "pooled_POD": 0.31,
+    "pooled_FAR": 0.8,
+    "pooled_CSI": 0.15,
+    "onset_error_pooled": {
+      "n": 54,
+      "share_within_10d": 0.519,
+      "median": -6.0,
+      "mae": 25.3
+    }
+  },
+  "chains_reproduced": {
+    "observed_chains": 10,
+    "origin_event_in_reanalysis": 7,
+    "pair_in_reanalysis": 2
+  },
+  "osse": [
+    {
+      "scenario": "continuous",
+      "n_events": 1010,
+      "n_origin_events": 478,
+      "n_opportunities": 465,
+      "n_connected": 305,
+      "n_pairs": 524,
+      "coverage": 0.9728,
+      "cf_all": 0.6381,
+      "cf_opp": 0.6559,
+      "mean_k_observing": 2.6323,
+      "p_link": 0.3508,
+      "mean_chain_size": 2.718,
+      "mean_pf_published": 0.7388,
+      "mean_pf_observing": 0.7492,
+      "null_cf_all": 0.4237,
+      "null_cf_opp": 0.4276,
+      "null_p_link": 0.2008,
+      "p_cf_all": 0.0005,
+      "p_cf_opp": 0.0005,
+      "p_p_link": 0.0005
+    },
+    {
+      "scenario": "masked to observed days",
+      "n_events": 270,
+      "n_origin_events": 171,
+      "n_opportunities": 99,
+      "n_connected": 44,
+      "n_pairs": 72,
+      "coverage": 0.5789,
+      "cf_all": 0.2573,
+      "cf_opp": 0.4444,
+      "mean_k_observing": 1.8687,
+      "p_link": 0.3128,
+      "mean_chain_size": 2.6364,
+      "mean_pf_published": 0.5182,
+      "mean_pf_observing": 0.7367,
+      "null_cf_all": 0.2381,
+      "null_cf_opp": 0.3566,
+      "null_p_link": 0.2493,
+      "p_cf_all": 0.3855,
+      "p_cf_opp": 0.138,
+      "p_p_link": 0.1315
+    },
+    {
+      "scenario": "refitted on observed days",
+      "n_events": 240,
+      "n_origin_events": 141,
+      "n_opportunities": 91,
+      "n_connected": 30,
+      "n_pairs": 43,
+      "coverage": 0.6454,
+      "cf_all": 0.2128,
+      "cf_opp": 0.3297,
+      "mean_k_observing": 1.8242,
+      "p_link": 0.2115,
+      "mean_chain_size": 2.4333,
+      "mean_pf_published": 0.3889,
+      "mean_pf_observing": 0.7633,
+      "null_cf_all": 0.1679,
+      "null_cf_opp": 0.2673,
+      "null_p_link": 0.1838,
+      "p_cf_all": 0.209,
+      "p_cf_opp": 0.1965,
+      "p_p_link": 0.2835
+    }
+  ]
+}

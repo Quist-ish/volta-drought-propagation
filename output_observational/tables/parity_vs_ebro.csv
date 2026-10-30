@@ -1,0 +1,64 @@
+section,quantity,ebro,volta,unit,scale,note,ratio,status
+frame,study period,1961-2020,1961-2007,,,"60 y vs 47 y window; mean defined record 9.1 y per node, used for all rates",,computed
+frame,stations with events,33,16,stations,network,33 screened gauges vs stations holding at least one event,0.48484848484848486,computed
+frame,origin locations,12,8,nodes,network,,0.6666666666666666,computed
+3.1,parameter combinations,750,750,,,"same grid: W 0-120 step 5, M 1-30 step 1",1.0,computed
+3.1,selected W,45,45,days,,,1.0,computed
+3.1,selected M,5,5,days,,,1.0,computed
+3.1,"metrics with RSI(W) = 0, of 6",6,6,,,"identity, not evidence: with lag <= 0 and overlap >= 1 every candidate contains s0, so W cannot matter",1.0,computed
+3.1,"metrics with RSI(M) < 0.10, of 6",5,1,,,published: M=5 lies on a stable plateau,0.2,computed
+3.1,Kneedle elbow in M,5,none found,days,,,,computed
+3.1,event catalogue range over configs,2009-3661,103-250,events,period,,,computed
+3.1,"catalogue range, % vs default",-23 / +39,-41 / +44,,,record-length free; proportional sensitivity of catalogue size,,computed
+S5,"station rank rho, severity, minimum",0.83,0.9008,,,,1.0853012048192772,computed
+S5,"station rank rho, count, minimum",0.3,0.9365,,,,3.1216666666666666,computed
+S1,"Spearman at M < 5, minimum",0.97,0.8652,,,published: > 0.97,0.8919587628865979,computed
+S1,"events reclassified at M < 5, max",0.02,0.0288,,,published: < 2%,1.44,computed
+3.2,drought events,2625,174,,period+network,,0.06628571428571428,computed
+3.2,events per node,79.5,10.875,,period,"raw count per node; Ebro 60 y per station, Volta 9.1 y per node",0.13679245283018868,computed
+3.2,events per node-year,1.325,1.1975861159267356,,,record-length normalised; the directly comparable rate,0.9038385780579137,computed
+3.2,"event duration, mean",33.2,22.580459770114942,days,,,0.6801343304251488,computed
+3.2,"event duration, median",19.0,13.0,days,,,0.6842105263157895,computed
+3.2,"event duration, max",613.0,188.0,days,,,0.3066884176182708,computed
+3.2,"event severity, mean",12.95,6.182235057471265,,,,0.4773926685305996,computed
+3.2,"event severity, median",3.94,2.7243,,,,0.6914467005076143,computed
+3.2,"event intensity, mean",0.293,0.23009367816091955,per day,,,0.7853026558393159,computed
+3.2,"event intensity, max",3.47,1.0809,per day,,,0.31149855907780977,computed
+3.2,"volumetric severity, mean",5.51,16.27139540229885,hm3,,,2.953066316206688,computed
+3.2,"volumetric severity, max",362.26,384.5625,hm3,,,1.0615648981394579,computed
+3.2,propagation chains,525,10,,period+network,,0.01904761904761905,computed
+3.2,chains as fraction of events,0.2,0.05747126436781609,,,scale-free; a primary comparison,0.28735632183908044,computed
+3.2,"chain duration, mean",157.3,42.6,days,,,0.2708200890019072,computed
+3.2,"chain duration, median",109.0,35.5,days,,,0.3256880733944954,computed
+3.2,"chain duration, max",692.0,80.0,days,,,0.11560693641618497,computed
+3.2,"chain size, mean",4.95,2.0,nodes,network,,0.40404040404040403,computed
+3.2,"chain size, median",3.0,2.0,nodes,network,,0.6666666666666666,computed
+3.2,"chain size, max",24,2.0,nodes,network,,0.08333333333333333,computed
+3.2,"propagation fraction, mean",0.418,0.4,,,set by topology when every chain has size two (pf = 1/N_avail); not a like-for-like comparison,0.9569377990430623,computed
+3.2,"propagation lag, mean",-33.37,-13.1,days,,,0.3925681750074918,computed
+3.2,"propagation lag, median",-21.5,-5.0,days,,,0.23255813953488372,computed
+3.2,"propagation lag, IQR",34.8,21.25,days,,,0.6106321839080461,computed
+3.2,"chain severity, mean",188.73,15.50179,,,,0.08213739204154083,computed
+3.2,"chain severity, median",86.02,10.576699999999999,,,,0.1229562892350616,computed
+3.2,"chain volumetric severity, mean",62.56,70.83746,hm3,,,1.1323123401534525,computed
+S4,connected fraction of origin events,0.566,0.0962,,,scale-free,0.16996466431095406,computed
+S4,null expectation,0.503,0.0681,,,,0.13538767395626242,computed
+S4,"p, connected fraction",0.02,0.193,,,,9.65,computed
+S4,"p, mean chain size",0.012,0.9945,,,,82.875,computed
+S4,valid upstream-downstream pairs,2075,10,,period+network,,0.004819277108433735,computed
+S7,"unconnected origin events, fraction",0.434,0.9038461538461539,,,against all origin events; see opportunities for the fair denominator,2.0825948245303083,computed
+S7,"isolated vs connected severity, ratio",1.2410714285714286,1.2163114320944162,,,direction and size of the contrast,0.9800494992415439,computed
+S7,"non-propagating upstream, fraction",0.386,0.5,,,scale-free,1.2953367875647668,computed
+S7,"non-propagating duration, mean",19.3,22.7,days,,,1.1761658031088082,computed
+S7,"propagating duration, mean",54.3,32.8,days,,,0.6040515653775322,computed
+S7,"non-propagating severity, mean",5.6,5.682,,,,1.0146428571428572,computed
+S7,"propagating severity, mean",24.1,8.597,,,,0.3567219917012448,computed
+S7,propagating / non-propagating severity,4.303571428571429,1.513023583245336,,,how strongly the matcher favours substantial events,0.3515739446545179,computed
+S1.4,"extra pairs at G=5 d, fraction",0.061,0.2,,,,3.278688524590164,computed
+S1.4,connected fraction after relaxation,0.587,0.1154,,,,0.19659284497444635,computed
+S1.4,"median severity, gap-admitted (G=45)",4.2,2.658,,,,0.6328571428571428,computed
+S1.4,"median severity, overlap-accepted",20.8,4.35,,,,0.20913461538461536,computed
+S1.4,accepted / gap-admitted severity,4.9523809523809526,1.6365688487584649,,,"published: overlap rule filters weak, coincidental pairs",0.3304610175377669,computed
+S8,chains overlapping an independent catalogue,0.787,,,,Volta has no national catalogue of equivalent standing; see S8,,not computed
+S9,stations flagged on homogeneity,12,16,,network,,1.3333333333333333,computed
+S9,fraction of network flagged,0.26666666666666666,0.8888888888888888,,,published: 12 of 45 candidate stations removed,3.333333333333333,computed

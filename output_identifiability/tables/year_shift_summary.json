@@ -1,0 +1,31 @@
+{
+ "by_shift": [
+  {
+   "shift_years": -1,
+   "qualified_links": 10,
+   "paired_valid_days": 19583,
+   "median_phi": 0.02254675885305604
+  },
+  {
+   "shift_years": 0,
+   "qualified_links": 10,
+   "paired_valid_days": 20769,
+   "median_phi": 0.13251672391286132
+  },
+  {
+   "shift_years": 1,
+   "qualified_links": 9,
+   "paired_valid_days": 18417,
+   "median_phi": 0.053065884494343955
+  }
+ ],
+ "common_links": 5,
+ "median_advantage": 0.09873264991673066,
+ "mean_advantage": 0.12016671200642488,
+ "resampling_2_5_97_5": [
+  0.04150700595278091,
+  0.19882641806006884
+ ],
+ "n_resamples": 10000,
+ "seed": 2026
+}

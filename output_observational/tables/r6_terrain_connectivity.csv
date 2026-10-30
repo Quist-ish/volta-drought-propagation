@@ -1,0 +1,19 @@
+station,grdc_upstream,terrain_upstream,agree,terrain_next_downstream,along_channel_km_to_next
+Vonkoro,"Lawra, Dapola","Lawra, Dapola",True,Bamboi,197.9
+Lawra,,,True,Dapola,11.9
+Bamboi,"Vonkoro, Lawra, Dapola","Vonkoro, Lawra, Dapola",True,,
+Prang,,,True,,
+Yagaba,,,True,Nawuni,208.7
+Wiasi,,,True,Nawuni,229.5
+Nawuni,"Yagaba, Wiasi, Pwalagu, Yarugu, Nangodi, Yakala","Yagaba, Wiasi, Pwalagu, Yarugu, Nangodi, Yakala",True,,
+Pwalagu,"Yarugu, Nangodi, Yakala","Yarugu, Nangodi, Yakala",True,Nawuni,238.7
+Yarugu,Yakala,Yakala,True,Pwalagu,157.6
+Nangodi,,,True,Pwalagu,121.5
+Ekumdipe,,,True,,
+Sabari,"Lama Kara, Porga, Tiele, Samboali","Lama Kara, Porga, Tiele, Samboali",True,,
+Lama Kara,,,True,Sabari,354.2
+Porga,"Tiele, Samboali","Tiele, Samboali",True,Sabari,394.1
+Tiele,,,True,Porga,150.3
+Dapola,Lawra,Lawra,True,Vonkoro,214.4
+Yakala,,,True,Yarugu,92.0
+Samboali,,,True,Porga,126.6

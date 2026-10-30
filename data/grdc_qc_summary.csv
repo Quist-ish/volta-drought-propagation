@@ -1,0 +1,34 @@
+grdc_no,station_name,river,subbasin,country,area_km2,n_days_in_window,pct_nan,max_nan_run,max_zero_run,pct_zero,n_years,mean_Q,passes,fail_reason
+1531450,NAWUNI,WHITE VOLTA,White Volta,Ghana,92950.0,10418,0.1087,320,0,0.0,32,235.433,True,
+1531050,LAWRA,BLACK VOLTA,Black Volta,Ghana,93820.0,7265,0.3784,1693,12,0.0015,25,58.97,False,missing 38% > 30%; gap 1693 d > 365 d
+1531100,BAMBOI,BLACK VOLTA,Black Volta,Ghana,134200.0,5046,0.5683,1642,179,0.094,21,300.774,False,missing 57% > 30%; gap 1642 d > 365 d
+1531550,PWALAGU,WHITE VOLTA,White Volta,Ghana,63350.0,4872,0.5832,2638,231,0.0935,23,103.425,False,missing 58% > 30%; gap 2638 d > 365 d
+1531800,SABARI,OTI,Oti,Ghana,58670.0,3595,0.6924,7517,0,0.0,12,413.862,False,missing 69% > 30%; gap 7517 d > 365 d
+1531600,YARUGU,WHITE VOLTA,White Volta,Ghana,41550.0,3531,0.6979,4290,69,0.0126,14,79.62,False,missing 70% > 30%; gap 4290 d > 365 d
+1531430,WIASI,SISSILI,White Volta,Ghana,9500.0,3416,0.7077,4322,192,0.0732,15,16.616,False,missing 71% > 30%; gap 4322 d > 365 d
+1731400,PORGA,PENDJARI,Oti,Benin,22280.0,3368,0.7118,5113,87,0.1011,13,35.476,False,missing 71% > 30%; gap 5113 d > 365 d
+1531420,YAGABA,KULPAWN,White Volta,Ghana,10600.0,3079,0.7366,5608,182,0.0868,17,30.049,False,missing 74% > 30%; gap 5608 d > 365 d
+1531300,PRANG,PRU,Lower Volta,Ghana,6355.0,2920,0.7502,8701,0,0.0,9,50.455,False,missing 75% > 30%; gap 8701 d > 365 d; 9 yr < 10 yr
+1731450,TIELE,MAGOU,,Benin,836.0,2628,0.7752,5113,254,0.135,10,4.901,False,missing 78% > 30%; gap 5113 d > 365 d; zero-run 254 d > 240 d
+1531680,EKUMDIPE,DAKA,Lower Volta,Ghana,6810.0,2604,0.7772,4140,285,0.1332,12,28.345,False,missing 78% > 30%; gap 4140 d > 365 d; zero-run 285 d > 240 d
+1931880,SAMBOALI,SINGOU,,Burkina Faso,4560.0,1855,0.8413,8401,239,0.1206,6,3.178,False,missing 84% > 30%; gap 8401 d > 365 d; 6 yr < 10 yr
+1631500,LAMA KARA,KARA,Oti,Togo,1560.0,1428,0.8778,8766,112,0.0541,4,19.33,False,missing 88% > 30%; gap 8766 d > 365 d; 4 yr < 10 yr
+1531650,NANGODI,RED VOLTA,White Volta,Ghana,11570.0,1256,0.8925,5059,197,0.0405,9,23.517,False,missing 89% > 30%; gap 5059 d > 365 d; 9 yr < 10 yr
+1431300,VONKORO,BLACK VOLTA,Black Volta,Cote d'Ivoire,111500.0,1051,0.9101,4748,13,0.0023,3,112.95,False,missing 91% > 30%; gap 4748 d > 365 d; 3 yr < 10 yr
+1931400,DAPOLA,BLACK VOLTA,Black Volta,Burkina Faso,66540.0,365,0.9688,10592,0,0.0,1,75.06,False,missing 97% > 30%; gap 10592 d > 365 d; 1 yr < 10 yr
+1931785,YAKALA,WHITE VOLTA,White Volta,Burkina Faso,33000.0,322,0.9725,10592,155,0.0162,1,23.658,False,missing 97% > 30%; gap 10592 d > 365 d; 1 yr < 10 yr
+1531700,SENCHI(HALCROW),VOLTA,Lower Volta,Ghana,394100.0,0,1.0,11688,0,,0,,False,no data in window
+1631100,MANGO,OTI,Oti,Togo,35650.0,0,1.0,11688,0,,0,,False,no data in window
+1631200,KOUMANGOU,KOUMONGOU,Oti,Togo,6730.0,0,1.0,11688,0,,0,,False,no data in window
+1631480,KPESSIDE,KARA,Oti,Togo,2787.0,0,1.0,11688,0,,0,,False,no data in window
+1931340,DIEBOUGOU,BOUGOURIBA,Black Volta,Burkina Faso,12200.0,0,1.0,11688,0,,0,,False,no data in window
+1931415,BATIE,KANBA,,Burkina Faso,5630.0,0,1.0,11688,0,,0,,False,no data in window
+1931460,OUESSA,BLACK VOLTA,Black Volta,Burkina Faso,50820.0,0,1.0,11688,0,,0,,False,no data in window
+1931475,NOUMBIEL,BLACK VOLTA,Black Volta,Burkina Faso,79700.0,0,1.0,11688,0,,0,,False,no data in window
+1931550,NEBBOU,SISSILI,White Volta,Burkina Faso,3240.0,0,1.0,11688,0,,0,,False,no data in window
+1931695,NOBERE,RED VOLTA,White Volta,Burkina Faso,7600.0,0,1.0,11688,0,,0,,False,no data in window
+1931770,NIAOGHO,WHITE VOLTA,White Volta,Burkina Faso,30200.0,0,1.0,11688,0,,0,,False,no data in window
+1931790,BAGRE,WHITE VOLTA,White Volta,Burkina Faso,33120.0,0,1.0,11688,0,,0,,False,no data in window
+1931815,BAGRE,TCHERBO,,Burkina Faso,972.0,0,1.0,11688,0,,0,,False,no data in window
+1931845,BITTOU,NAHAU,,Burkina Faso,4050.0,0,1.0,11688,0,,0,,False,no data in window
+1931860,TAGOU,MOILABOUANGA,,Burkina Faso,5640.0,0,1.0,11688,0,,0,,False,no data in window

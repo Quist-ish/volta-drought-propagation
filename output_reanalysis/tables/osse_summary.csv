@@ -1,0 +1,4 @@
+scenario,n_events,n_origin_events,n_opportunities,n_connected,n_pairs,coverage,cf_all,cf_opp,mean_k_observing,p_link,mean_chain_size,mean_pf_published,mean_pf_observing,null_cf_all,null_cf_opp,null_p_link,p_cf_all,p_cf_opp,p_p_link
+continuous,1010,478,465,305,524,0.9728,0.6381,0.6559,2.6323,0.3508,2.718,0.7388,0.7492,0.4237,0.4276,0.2008,0.0005,0.0005,0.0005
+masked to observed days,270,171,99,44,72,0.5789,0.2573,0.4444,1.8687,0.3128,2.6364,0.5182,0.7367,0.2381,0.3566,0.2493,0.3855,0.138,0.1315
+refitted on observed days,240,141,91,30,43,0.6454,0.2128,0.3297,1.8242,0.2115,2.4333,0.3889,0.7633,0.1679,0.2673,0.1838,0.209,0.1965,0.2835

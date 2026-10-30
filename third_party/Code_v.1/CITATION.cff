@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article and the archived release."
+type: software
+title: "Tracking Hydrological Drought Propagation in River Networks: An Event-Based Framework (code)"
+version: "2.0"
+license: MIT
+repository-code: "https://github.com/AlexCrespillo/Code_v.1"
+authors:
+  - family-names: "Crespillo López"
+    given-names: "Alex"
+    email: "alex@ipe.csic.es"
+    affiliation: "Pyrenean Institute of Ecology (IPE-CSIC), Zaragoza, Spain"
+keywords:
+  - hydrological drought
+  - drought propagation
+  - river networks
+  - Standardised Streamflow Index
+  - Ebro basin
+preferred-citation:
+  type: article
+  title: "Tracking Hydrological Drought Propagation in River Networks: An Event-Based Framework"
+  journal: "Journal of Hydrology"
+  authors:
+    - family-names: "Crespillo López"
+      given-names: "Alex"
+      affiliation: "Pyrenean Institute of Ecology (IPE-CSIC), Zaragoza, Spain"
+    - family-names: "Vicente Serrano"
+      given-names: "Sergio Marin"
+      affiliation: "Pyrenean Institute of Ecology (IPE-CSIC), Zaragoza, Spain"
+    - family-names: "Gimeno Presa"
+      given-names: "Luís"
+      affiliation: "Environmental Physics Laboratory (EPhysLab), CIM-UVigo, Universidade de Vigo, Ourense, Spain"

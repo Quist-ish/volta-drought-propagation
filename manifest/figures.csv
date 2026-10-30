@@ -1,0 +1,30 @@
+item,title,file,script,needs_grdc,note
+Fig. 1,Study area,figures/Fig01_study_area.pdf,figures_pub/fig01_study_area.py,no,
+Fig. 2,"Methodological framework in five stages: data, processing, the three-condition link test, inference and outputs for objectives (i)–(iv) …",figures/Fig02_framework.pdf,figures_pub/fig02_framework_redraw.py,no,Stage 5 panels and the Drought index and Climate indices cards drawn from derived tables; other pictures schematic
+Fig. 3,"Regime shift in Volta rainfall, drought synchrony and runoff",figures/Fig03_regime_shift.pdf,figures_pub/figs_climate_projection.py regime,no,
+Fig. 4,"Climate modes and Volta drought, 1952–2020",figures/Fig04_teleconnections.pdf,figures_pub/figs_climate_projection.py tele,no,
+Fig. 5,The ten matched pairs,figures/Fig05_chain_geometry.pdf,figures_pub/fig05_landscape_panels.py fig5,no,
+Fig. 6,Identifiability on sparse networks,figures/Fig06_identifiability.pdf,figures_pub/fig10_11.py,no,
+Fig. 7,The reanalysis network,figures/Fig07_reanalysis.pdf,figures_pub/fig10_11.py,no,
+Fig. 8,Projected drought risk and the monitoring horizon,figures/Fig08_projection.pdf,figures_pub/figs_climate_projection.py proj,no,
+Fig. S1,"Station-by-year share of days with discharge data, 1961–2007, with the onsets of the matched …",figures/FigS01_availability.pdf,figures_pub/figS_a.py,no,
+Fig. S2,Split-sample homogeneity statistic against years of defined index; the dashed line marks the …,figures/FigS02_homogeneity.pdf,figures_pub/figS_a.py,no,
+Fig. S3,"Sensitivity of event detection to the pooling gap and the minimum duration: (a) event count, …",figures/FigS03_detection_sensitivity.pdf,figures_pub/figS_a.py,no,
+Fig. S4,"The 174 drought events at 16 stations, 1961–2007: (a) duration, (b) severity, (c) intensity …",figures/FigS04_event_summary.pdf,figures_pub/fig04_05_06.py,no,
+Fig. S5,"Drought event at Nawuni (White Volta), 13 October 1978 to 21 February 1979 (132 days, …",figures/FigS05_event_example.pdf,figures_pub/fig02_event_example.py,yes,daily discharge panel
+Fig. S6,"Wavelet coherence of basin SPI-12 with (a) the AMO, (b) Niño 3.4, (c) ATL3, (d) TNA − TSA, …",figures/FigS06_wtc_all.pdf,figures_pub/figs_climate_projection.py wtcall,no,
+Fig. S7,"As Fig. S6, for the 12-month mean of drought synchrony.",figures/FigS07_sync_wtc.pdf,figures_pub/figs_climate_projection.py syncwtc,no,
+Fig. S8,Lagged correlation of (a) basin SPI-12 and (b) drought synchrony with six monthly climate …,figures/FigS08_lagcorr.pdf,figures_pub/figs_climate_projection.py lag,no,
+Fig. S9,Matching rules on a constructed example,figures/FigS09_matching_rules.pdf,figures_pub/figS_redesign.py s9,no,
+Fig. S10,"Onset lag of the ten matched pairs against (a) straight-line distance, (b) intervening …",figures/FigS10_lag_relations.pdf,figures_pub/figS_a.py,no,
+Fig. S11,"Event-level sensitivity of chain structure to the minimum overlap M, relative to M = 5 (after …",figures/FigS11_M_sensitivity.pdf,figures_pub/figS_a.py,no,
+Fig. S12,Sensitivity of six pair metrics to the search window W (vertical axis) and the minimum …,figures/FigS12_WM_sensitivity.pdf,figures_pub/fig04_05_06.py,no,
+Fig. S13,"Case 1: Bamboi (Black Volta), 6 August–30 September 1976, with the upstream event at Lawra",figures/FigS13_case1_bamboi.pdf,figures_pub/fig07_09_chains.py,no,
+Fig. S14,"As Fig. S13, for Case 2: Nawuni (White Volta), 17 June–4 September 1997, with the upstream …",figures/FigS14_case2_nawuni.pdf,figures_pub/fig07_09_chains.py,no,
+Fig. S15,"As Fig. S13, for Case 3: Porga (Pendjari), 5–18 September 1983, with the upstream event on …",figures/FigS15_case3_porga.pdf,figures_pub/fig07_09_chains.py,no,
+Fig. S16,"Driest SPI-6 (GPCC) among observing upstream catchments at the origin onset, for connected …",figures/FigS16_rainfall.pdf,figures_pub/figS_b.py,no,
+Fig. S17,"Testability of the origin droughts",figures/FigS17_opportunities.pdf,figures_pub/figS_redesign.py s17,no,
+Fig. S18,Landscape and storage associations against the detection limit,figures/FigS18_landscape_power.pdf,figures_pub/figS_redesign.py s18,no,"attributes from figures_pub/supp_tables/TableS37.csv (HydroATLAS, separate workflow); signatures from figures_pub/supp_tables/TableS64.csv and output_landscape/storage_persistence_gauges.csv"
+Fig. S19,Out-of-fold predictions of log monthly discharge by the transfer-model ensemble (orange) …,figures/FigS19_transfer.pdf,figures_pub/figs_climate_projection.py transfer,yes,observed monthly discharge
+Fig. S20,"Change in the share of months below −1 by model, index and site, 2051–2080 relative to …",figures/FigS20_projmodels.pdf,figures_pub/figs_climate_projection.py projmodels,no,
+Graphical abstract,"Rainfall break, runoff efficiency by gauge, observable sample and years to a 50%-power test",figures/GraphicalAbstract.pdf,figures_pub/graphical_abstract.py,no,from derived tables

@@ -1,0 +1,7 @@
+{
+ "period": "1961-2007",
+ "source": "GRDC daily discharge, observed days only",
+ "lyne_hollick_alpha": 0.925,
+ "min_run_days_bfi": 60,
+ "min_limb_days": 7
+}

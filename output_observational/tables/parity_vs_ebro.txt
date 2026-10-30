@@ -1,0 +1,113 @@
+================================================================================================
+  PARITY AGAINST Crespillo Lopez et al. (2026), J. Hydrol. 680, 136544
+================================================================================================
+
+[frame]
+  study period                                    1961-2020 |    1961-2007
+      60 y vs 47 y window; mean defined record 9.1 y per node, used for all rates
+  stations with events                                   33 |           16  x0.48  [network]
+      33 screened gauges vs stations holding at least one event
+  origin locations                                       12 |            8  x0.67  [network]
+
+[3.1]
+  parameter combinations                                750 |          750  x1.00
+      same grid: W 0-120 step 5, M 1-30 step 1
+  selected W                                             45 |           45  x1.00
+  selected M                                              5 |            5  x1.00
+  metrics with RSI(W) = 0, of 6                           6 |            6  x1.00
+      identity, not evidence: with lag <= 0 and overlap >= 1 every candidate contains s0, so W cannot matter
+  metrics with RSI(M) < 0.10, of 6                        5 |            1  x0.20
+      published: M=5 lies on a stable plateau
+  Kneedle elbow in M                                      5 |   none found
+  event catalogue range over configs              2009-3661 |      103-250  [period]
+  catalogue range, % vs default                   -23 / +39 |    -41 / +44
+      record-length free; proportional sensitivity of catalogue size
+
+[S5]
+  station rank rho, severity, minimum                  0.83 |        0.901  x1.09
+  station rank rho, count, minimum                      0.3 |        0.936  x3.12
+
+[S1]
+  Spearman at M < 5, minimum                           0.97 |        0.865  x0.89
+      published: > 0.97
+  events reclassified at M < 5, max                    0.02 |        0.029  x1.44
+      published: < 2%
+
+[3.2]
+  drought events                                      2,625 |          174  x0.07  [period+network]
+  events per node                                      79.5 |       10.875  x0.14  [period]
+      raw count per node; Ebro 60 y per station, Volta 9.1 y per node
+  events per node-year                                1.325 |        1.198  x0.90
+      record-length normalised; the directly comparable rate
+  event duration, mean                                 33.2 |        22.58  x0.68
+  event duration, median                                 19 |           13  x0.68
+  event duration, max                                   613 |          188  x0.31
+  event severity, mean                                12.95 |        6.182  x0.48
+  event severity, median                               3.94 |        2.724  x0.69
+  event intensity, mean                               0.293 |         0.23  x0.79
+  event intensity, max                                 3.47 |        1.081  x0.31
+  volumetric severity, mean                            5.51 |       16.271  x2.95
+  volumetric severity, max                           362.26 |      384.562  x1.06
+  propagation chains                                    525 |           10  x0.02  [period+network]
+  chains as fraction of events                          0.2 |        0.057  x0.29
+      scale-free; a primary comparison
+  chain duration, mean                                157.3 |         42.6  x0.27
+  chain duration, median                                109 |         35.5  x0.33
+  chain duration, max                                   692 |           80  x0.12
+  chain size, mean                                     4.95 |            2  x0.40  [network]
+  chain size, median                                      3 |            2  x0.67  [network]
+  chain size, max                                        24 |            2  x0.08  [network]
+  propagation fraction, mean                          0.418 |          0.4  x0.96
+      set by topology when every chain has size two (pf = 1/N_avail); not a like-for-like comparison
+  propagation lag, mean                              -33.37 |        -13.1  x0.39
+  propagation lag, median                             -21.5 |           -5  x0.23
+  propagation lag, IQR                                 34.8 |        21.25  x0.61
+  chain severity, mean                               188.73 |       15.502  x0.08
+  chain severity, median                              86.02 |       10.577  x0.12
+  chain volumetric severity, mean                     62.56 |       70.837  x1.13
+
+[S4]
+  connected fraction of origin events                 0.566 |        0.096  x0.17
+      scale-free
+  null expectation                                    0.503 |        0.068  x0.14
+  p, connected fraction                                0.02 |        0.193  x9.65
+  p, mean chain size                                  0.012 |        0.995  x82.88
+  valid upstream-downstream pairs                     2,075 |           10  x0.00  [period+network]
+
+[S7]
+  unconnected origin events, fraction                 0.434 |        0.904  x2.08
+      against all origin events; see opportunities for the fair denominator
+  isolated vs connected severity, ratio               1.241 |        1.216  x0.98
+      direction and size of the contrast
+  non-propagating upstream, fraction                  0.386 |          0.5  x1.30
+      scale-free
+  non-propagating duration, mean                       19.3 |         22.7  x1.18
+  propagating duration, mean                           54.3 |         32.8  x0.60
+  non-propagating severity, mean                        5.6 |        5.682  x1.01
+  propagating severity, mean                           24.1 |        8.597  x0.36
+  propagating / non-propagating severity              4.304 |        1.513  x0.35
+      how strongly the matcher favours substantial events
+
+[S1.4]
+  extra pairs at G=5 d, fraction                      0.061 |          0.2  x3.28
+  connected fraction after relaxation                 0.587 |        0.115  x0.20
+  median severity, gap-admitted (G=45)                  4.2 |        2.658  x0.63
+  median severity, overlap-accepted                    20.8 |         4.35  x0.21
+  accepted / gap-admitted severity                    4.952 |        1.637  x0.33
+      published: overlap rule filters weak, coincidental pairs
+
+[S8]
+  chains overlapping an independent catalogue         0.787 |           --
+      Volta has no national catalogue of equivalent standing; see S8
+
+[S9]
+  stations flagged on homogeneity                        12 |           16  x1.33  [network]
+  fraction of network flagged                         0.267 |        0.889  x3.33
+      published: 12 of 45 candidate stations removed
+
+------------------------------------------------------------------------------------------------
+  62 of 63 quantities computed; 1 awaiting pipeline output.
+  [period]  differs legitimately with record length per station
+  [network] differs legitimately with network size, 33 gauges vs n nodes
+  Rows without a flag are scale-free and are the real comparisons.
+================================================================================================

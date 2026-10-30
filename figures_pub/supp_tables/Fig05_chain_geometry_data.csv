@@ -1,0 +1,11 @@
+label,cls,lead,end_off,dist,upstream_severity,origin_severity,chain_severity,upstream_peak_day,origin_peak_day
+"Vonkoro ← Lawra, May 1993",nested,5,4,226.3,1.4613,1.7977,3.259,0,5
+"Bamboi ← Lawra, Aug 1976",near,1,-21,424.2000000000001,3.6428,12.2373,15.8801,6,34
+"Bamboi ← Lawra, Aug 2005",near,0,-6,424.2000000000001,2.1592,10.5467,12.7059,4,6
+"Nawuni ← Yarugu, Jun 1976",relay,6,-20,396.3,0.9312,7.5163,8.4475,6,15
+"Nawuni ← Pwalagu, Jun 1988",nested,5,18,238.7,7.0862,0.2023,7.2885,22,5
+"Nawuni ← Wiasi, Oct 1990",relay,33,-5,229.5,19.5805,5.4359,25.0164,-33,14
+"Nawuni ← Yagaba, Jul 1996",nested,29,0,208.7,5.0565,1.2632,6.3197,8,6
+"Nawuni ← Wiasi, Aug 1997",nested,46,19,229.5,22.6671,2.6677,25.3348,29,7
+"Pwalagu ← Yarugu, Aug 1990",relay,5,-39,157.6,20.6456,23.3689,44.0145,12,33
+"Porga ← Samboali, Sep 1983",near,1,-7,126.6,2.7392,4.0123,6.7515,4,7

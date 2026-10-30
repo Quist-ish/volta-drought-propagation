@@ -1,0 +1,119 @@
+{
+ "B_equivalence": {
+  "strata": [
+   1,
+   2,
+   4
+  ],
+  "volta_opportunities": 36,
+  "OR_MH": 0.8699436579169849,
+  "se_lnOR": 0.4035543222972774,
+  "ci95": [
+   0.3944380038900717,
+   1.9186842050871489
+  ],
+  "ci90": [
+   0.4479051934952455,
+   1.6896476730806593
+  ],
+  "tost_margin_1.5": {
+   "p": 0.25479198445561946,
+   "equivalent": false
+  },
+  "tost_margin_2.0": {
+   "p": 0.08497626062090496,
+   "equivalent": false
+  },
+  "tost_margin_3.0": {
+   "p": 0.008724884821470956,
+   "equivalent": true
+  },
+  "smallest_margin_equivalent": 2.232615326909834
+ },
+ "C_synthetic_truth": [
+  {
+   "p_true": 0.1,
+   "cf_all_continuous": 0.2960615384615385,
+   "cf_all_observed": 0.05972019230769231,
+   "cf_opp_observed": 0.15527249999999998,
+   "ratio_cf_all": 0.2017154697568073,
+   "p_hat_median": 0.0965998104003519,
+   "p_hat_bias": 0.0007200431550041242,
+   "p_hat_2_5": 0.030785472975209546,
+   "p_hat_97_5": 0.1829370564958536
+  },
+  {
+   "p_true": 0.16,
+   "cf_all_continuous": 0.4303125,
+   "cf_all_observed": 0.09193125,
+   "cf_opp_observed": 0.23902125000000002,
+   "ratio_cf_all": 0.21363834422657954,
+   "p_hat_median": 0.15737916031642576,
+   "p_hat_bias": 0.0014682259582656787,
+   "p_hat_2_5": 0.07701926746361643,
+   "p_hat_97_5": 0.2682541068576928
+  },
+  {
+   "p_true": 0.25,
+   "cf_all_continuous": 0.5874067307692308,
+   "cf_all_observed": 0.13572980769230772,
+   "cf_opp_observed": 0.35289750000000003,
+   "ratio_cf_all": 0.23106614307017648,
+   "p_hat_median": 0.24741870503806637,
+   "p_hat_bias": 0.00043804952081993864,
+   "p_hat_2_5": 0.1425529004976531,
+   "p_hat_97_5": 0.3730068597820476
+  }
+ ],
+ "D_lag_distance": {
+  "rho_channel": 0.21363150574154266,
+  "p_channel": 0.5534311070541144,
+  "n": 10,
+  "channel_km_range": [
+   126.6,
+   424.20000000000005
+  ],
+  "rho_upstream_duration": -0.7447035204249629,
+  "p_upstream_duration": 0.013474778516613748
+ },
+ "A_common_reference": {
+  "own record (default)": {
+   "events": 174,
+   "origin_events": 104,
+   "opportunities": 40,
+   "connected": 10,
+   "coverage": 0.38461538461538464,
+   "cf_all": 0.09615384615384616,
+   "cf_opp": 0.25,
+   "p_link": 0.16169345135041874,
+   "p_link_ci": [
+    0.07360394450077225,
+    0.2832622786245076
+   ],
+   "null_cf_opp": 0.1326543146163499,
+   "p_cf_opp": 0.0395,
+   "null_p_link": 0.09299235181013153,
+   "p_p_link": 0.0795,
+   "p_cf_all": 0.2475
+  },
+  "common reference 1975-1992": {
+   "events": 119,
+   "origin_events": 66,
+   "opportunities": 33,
+   "connected": 5,
+   "coverage": 0.5,
+   "cf_all": 0.07575757575757576,
+   "cf_opp": 0.15151515151515152,
+   "p_link": 0.09713552058970963,
+   "p_link_ci": [
+    0.023389991822249618,
+    0.2257178712737974
+   ],
+   "null_cf_opp": 0.09949399752539681,
+   "p_cf_opp": 0.229,
+   "null_p_link": 0.07156287466604028,
+   "p_p_link": 0.285,
+   "p_cf_all": 0.224
+  }
+ }
+}

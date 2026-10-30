@@ -1,0 +1,85 @@
+{
+  "n_training_rows": 48798,
+  "skill": {
+    "pooled_loyo": {
+      "n": 48798,
+      "r2": 0.0819,
+      "spearman": 0.2997,
+      "kappa": -0.0015
+    },
+    "pooled_loso": {
+      "n": 48798,
+      "r2": 0.1446,
+      "spearman": 0.3951,
+      "kappa": 0.0706
+    },
+    "pooled_reanalysis_comasked_same_days": {
+      "n": 48476,
+      "r2": -0.5478,
+      "spearman": 0.2301,
+      "kappa": 0.0531
+    }
+  },
+  "feature_importance": {
+    "f_sahel_cur": 0.185,
+    "f_sahel_prev": 0.134,
+    "f_log_area": 0.129,
+    "f_ssi_ra_30": 0.125,
+    "f_ssi_ra_90": 0.104,
+    "f_doy_sin": 0.1,
+    "f_doy_cos": 0.09,
+    "f_ssi_ra_7": 0.062,
+    "f_dlogq_30": 0.042,
+    "f_ssi_ra": 0.03
+  },
+  "event_skill_loyo": {
+    "POD": 0.0,
+    "FAR": 1.0,
+    "CSI": 0.0,
+    "n_obs": 174,
+    "n_pred": 2
+  },
+  "hybrid_share_observed": {
+    "span": 0.485,
+    "full": 0.215
+  },
+  "hybrid": [
+    {
+      "series": "observed",
+      "n_events": 174,
+      "n_origin_events": 104,
+      "n_opportunities": 40,
+      "n_connected": 10,
+      "cf_opp": 0.25,
+      "p_link": 0.1617,
+      "p_cf_opp": 0.0395,
+      "p_p_link": 0.0795
+    },
+    {
+      "series": "hybrid, within spans",
+      "n_events": 208,
+      "n_origin_events": 118,
+      "n_opportunities": 86,
+      "n_connected": 21,
+      "cf_opp": 0.244,
+      "p_link": 0.1068,
+      "p_cf_opp": 0.147,
+      "p_p_link": 0.4255
+    },
+    {
+      "series": "hybrid, full 1961-2007",
+      "n_events": 229,
+      "n_origin_events": 126,
+      "n_opportunities": 123,
+      "n_connected": 31,
+      "cf_opp": 0.252,
+      "p_link": 0.089,
+      "p_cf_opp": 0.147,
+      "p_p_link": 0.3905
+    }
+  ],
+  "unconnected_opportunities": {
+    "n": 30,
+    "connected_under_hybrid": 0
+  }
+}

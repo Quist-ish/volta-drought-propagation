@@ -1,0 +1,11 @@
+specification,origin_events,connected,p_hat,interval,note
+Reference maximum likelihood,40,10,0.1616934489372729,0.073-0.279,calendar-year block bootstrap (identifiability_analysis.py)
+Delete one origin event at a time,39,9-10,,0.148-0.176,40 refits; influence range
+"Beta(1,1) prior on p",40,10,0.1690530699112434,0.091-0.274,posterior median and 95% credible interval
+"Beta(2,2) prior on p",40,10,0.1793374395901839,0.099-0.285,posterior median and 95% credible interval
+Withhold Vonkoro,38,9,0.1502635463977331,,downstream-gauge deletion
+Withhold Bamboi,27,8,0.16381282365119892,,downstream-gauge deletion
+Withhold Nawuni,24,5,0.18905161593290434,,downstream-gauge deletion
+Withhold Pwalagu,37,9,0.15676912995833964,,downstream-gauge deletion
+Withhold Porga,34,9,0.16412919783439994,,downstream-gauge deletion
+Bamboi 1999-2007 and Pwalagu 1988-1996 unobserved,24,7,0.1607799823829002,,154 events; cf_opp = 0.292 (zero_flow_sensitivity.py)

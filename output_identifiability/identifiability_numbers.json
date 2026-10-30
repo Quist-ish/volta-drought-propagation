@@ -1,0 +1,303 @@
+{
+  "networks": [
+    {
+      "network": "Ebro",
+      "n_origin_events": 928,
+      "n_opportunities": 928,
+      "n_connected": 525,
+      "n_pairs": 2075,
+      "coverage": 1.0,
+      "mean_k_observing": 9.2026,
+      "cf_all": 0.5657,
+      "cf_opp": 0.5657,
+      "p_link": 0.1641,
+      "mean_chain_size": 4.9524,
+      "mean_pf_published": 0.4182,
+      "cf_opp_ci": [
+        0.5164,
+        0.6154
+      ],
+      "p_link_ci": [
+        0.1367,
+        0.1965
+      ],
+      "null_cf_all": 0.5027,
+      "null_cf_opp": 0.5027,
+      "null_p_link": 0.1285,
+      "null_mean_chain_size": 4.281,
+      "p_cf_all": 0.0185,
+      "p_cf_opp": 0.0185,
+      "p_p_link": 0.018,
+      "p_mean_chain_size": 0.009
+    },
+    {
+      "network": "Volta observed",
+      "n_origin_events": 104,
+      "n_opportunities": 40,
+      "n_connected": 10,
+      "n_pairs": 10,
+      "coverage": 0.3846,
+      "mean_k_observing": 1.675,
+      "cf_all": 0.0962,
+      "cf_opp": 0.25,
+      "p_link": 0.1617,
+      "mean_chain_size": 2.0,
+      "mean_pf_published": 0.4,
+      "cf_opp_ci": [
+        0.1162,
+        0.4
+      ],
+      "p_link_ci": [
+        0.0733,
+        0.2786
+      ],
+      "null_cf_all": 0.074,
+      "null_cf_opp": 0.1327,
+      "null_p_link": 0.093,
+      "null_mean_chain_size": 2.0602,
+      "p_cf_all": 0.2475,
+      "p_cf_opp": 0.0395,
+      "p_p_link": 0.0795,
+      "p_mean_chain_size": 1.0
+    }
+  ],
+  "proposition2_check": {
+    "Ebro": {
+      "coverage": 1.0,
+      "predicted_cf_opp": 0.5453,
+      "observed_cf_opp": 0.5657,
+      "predicted_cf_all": 0.5453,
+      "observed_cf_all": 0.5657
+    },
+    "Volta observed": {
+      "coverage": 0.3846,
+      "predicted_cf_opp": 0.2415,
+      "observed_cf_opp": 0.25,
+      "predicted_cf_all": 0.0929,
+      "observed_cf_all": 0.0962
+    }
+  },
+  "stratified": {
+    "mh_odds_ratio_volta_vs_ebro": 0.87,
+    "mh_or_ci": [
+      0.39,
+      1.92
+    ],
+    "mh_test_p": 0.73,
+    "breslow_day_p": 0.91,
+    "strata": [
+      1,
+      2,
+      4
+    ],
+    "volta_opportunities_in_shared_strata": 36
+  },
+  "ebro_equivalent_cf_volta": 0.542,
+  "ebro_equivalent_cf_volta_ci": [
+    0.377,
+    0.664
+  ],
+  "volta_equivalent_cf_ebro": 0.245,
+  "volta_defined_record_days": {
+    "median": 2602,
+    "min": 89,
+    "max": 10514
+  },
+  "thinning_full": [
+    {
+      "n_stations": 5,
+      "coverage": 1.0,
+      "cf_all": 0.408,
+      "cf_opp": 0.408,
+      "mean_k_observing": 2.0,
+      "p_link": 0.223
+    },
+    {
+      "n_stations": 8,
+      "coverage": 1.0,
+      "cf_all": 0.431,
+      "cf_opp": 0.431,
+      "mean_k_observing": 2.527,
+      "p_link": 0.206
+    },
+    {
+      "n_stations": 11,
+      "coverage": 1.0,
+      "cf_all": 0.489,
+      "cf_opp": 0.489,
+      "mean_k_observing": 4.077,
+      "p_link": 0.201
+    },
+    {
+      "n_stations": 15,
+      "coverage": 1.0,
+      "cf_all": 0.518,
+      "cf_opp": 0.518,
+      "mean_k_observing": 4.827,
+      "p_link": 0.192
+    },
+    {
+      "n_stations": 21,
+      "coverage": 1.0,
+      "cf_all": 0.535,
+      "cf_opp": 0.535,
+      "mean_k_observing": 6.872,
+      "p_link": 0.179
+    },
+    {
+      "n_stations": 27,
+      "coverage": 1.0,
+      "cf_all": 0.57,
+      "cf_opp": 0.57,
+      "mean_k_observing": 8.037,
+      "p_link": 0.172
+    },
+    {
+      "n_stations": 33,
+      "coverage": 1.0,
+      "cf_all": 0.566,
+      "cf_opp": 0.566,
+      "mean_k_observing": 9.203,
+      "p_link": 0.164
+    }
+  ],
+  "thinning_p_link_range_median": [
+    0.164,
+    0.223
+  ],
+  "ebro_volta_like_33": {
+    "draws": 40,
+    "median_coverage": 0.582,
+    "median_cf_all": 0.192,
+    "median_opportunities": 53.5,
+    "reject_cf_all": 6,
+    "reject_cf_opp": 5,
+    "reject_p_link": 6
+  },
+  "degraded_draws_total": 521,
+  "degraded_draws_with_opportunities": 446,
+  "power_by_bin": [
+    {
+      "opp_bin": "[1, 10)",
+      "n": 52,
+      "median_opp": 4.5,
+      "power_cf_all": 0.038,
+      "power_cf_opp": 0.077,
+      "power_p_link": 0.038,
+      "median_cf_opp": 0.222,
+      "median_p_link": 0.171
+    },
+    {
+      "opp_bin": "[10, 20)",
+      "n": 34,
+      "median_opp": 15.0,
+      "power_cf_all": 0.118,
+      "power_cf_opp": 0.088,
+      "power_p_link": 0.059,
+      "median_cf_opp": 0.257,
+      "median_p_link": 0.167
+    },
+    {
+      "opp_bin": "[20, 40)",
+      "n": 70,
+      "median_opp": 27.0,
+      "power_cf_all": 0.029,
+      "power_cf_opp": 0.129,
+      "power_p_link": 0.1,
+      "median_cf_opp": 0.333,
+      "median_p_link": 0.193
+    },
+    {
+      "opp_bin": "[40, 80)",
+      "n": 72,
+      "median_opp": 55.0,
+      "power_cf_all": 0.167,
+      "power_cf_opp": 0.083,
+      "power_p_link": 0.139,
+      "median_cf_opp": 0.351,
+      "median_p_link": 0.21
+    },
+    {
+      "opp_bin": "[80, 160)",
+      "n": 50,
+      "median_opp": 87.0,
+      "power_cf_all": 0.2,
+      "power_cf_opp": 0.16,
+      "power_p_link": 0.12,
+      "median_cf_opp": 0.448,
+      "median_p_link": 0.224
+    },
+    {
+      "opp_bin": "[160, 320)",
+      "n": 59,
+      "median_opp": 217.0,
+      "power_cf_all": 0.203,
+      "power_cf_opp": 0.203,
+      "power_p_link": 0.153,
+      "median_cf_opp": 0.47,
+      "median_p_link": 0.196
+    },
+    {
+      "opp_bin": "[320, 640)",
+      "n": 75,
+      "median_opp": 479.0,
+      "power_cf_all": 0.64,
+      "power_cf_opp": 0.64,
+      "power_p_link": 0.627,
+      "median_cf_opp": 0.554,
+      "median_p_link": 0.183
+    },
+    {
+      "opp_bin": "[640, 10000)",
+      "n": 34,
+      "median_opp": 757.0,
+      "power_cf_all": 0.853,
+      "power_cf_opp": 0.853,
+      "power_p_link": 0.794,
+      "median_cf_opp": 0.555,
+      "median_p_link": 0.174
+    }
+  ],
+  "N50": {
+    "p_cf_all": 337.0,
+    "p_cf_opp": 366.0,
+    "p_p_link": 409.0
+  },
+  "N80": {
+    "p_cf_all": 1347.0,
+    "p_cf_opp": 1737.0,
+    "p_p_link": 1804.0
+  },
+  "power_at": {
+    "p_cf_all": {
+      "40": 0.106,
+      "928": 0.734
+    },
+    "p_cf_opp": {
+      "40": 0.122,
+      "928": 0.696
+    },
+    "p_p_link": {
+      "40": 0.102,
+      "928": 0.682
+    }
+  },
+  "analytic_bound": [
+    {
+      "network": "Ebro",
+      "null_cf_opp": 0.5027,
+      "cf_opp": 0.5657,
+      "excess": 0.063,
+      "n_opportunities": 928,
+      "n_star_binomial": 388.0
+    },
+    {
+      "network": "Volta observed",
+      "null_cf_opp": 0.1327,
+      "cf_opp": 0.25,
+      "excess": 0.1173,
+      "n_opportunities": 40,
+      "n_star_binomial": 62.0
+    }
+  ]
+}

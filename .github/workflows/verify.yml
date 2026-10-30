@@ -1,0 +1,51 @@
+# Checks that the repository, its derived tables and the article agree, on every push and pull request.
+# No restricted data are needed: GRDC daily discharge is not part of the repository.
+name: verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  numbers:
+    name: Checksums and reported numbers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every shipped file matches CHECKSUMS.sha256
+        run: sha256sum --quiet --strict -c CHECKSUMS.sha256
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install the two packages the check needs
+        run: python -m pip install "numpy==2.5.3" "pandas==2.2.3"
+      - name: Recompute every checked number of the article from the shipped tables
+        run: python verify_manuscript_numbers.py
+      - name: Keep the verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verification-report
+          path: verification/
+
+  tests:
+    name: Matcher and synthetic-basin tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install the pinned environment
+        run: python -m pip install -r requirements.txt
+      - name: Vectorised matcher equals the reference matcher on the shipped catalogue
+        run: python -I tests/test_fastmatch.py
+      - name: SSI, events, matching, chains and null on a synthetic basin
+        run: python -I tests/test_pipeline_synthetic.py
+      - name: Supplementary analyses on synthetic data
+        run: python -I tests/test_supplementary.py

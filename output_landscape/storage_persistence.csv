@@ -1,0 +1,13 @@
+subset,predictor,outcome,n,spearman_rho,ci95_low,ci95_high,perm_p_two_sided,partial_rho_logarea_years,n_partial,holm_p_primary_family
+all gauges with events,bfi,median_duration,16,0.162,-0.486,0.634,0.55,0.128,16,1.0
+all gauges with events,bfi,median_duration_uncensored,16,0.087,-0.55,0.576,0.744,0.035,16,
+all gauges with events,tau_rec_d,median_duration,16,0.408,-0.247,0.796,0.1166,0.396,16,0.3498
+all gauges with events,tau_rec_d,median_duration_uncensored,16,0.329,-0.311,0.757,0.2124,0.307,16,
+all gauges with events,zero_flow_frac,median_duration,16,-0.161,-0.648,0.388,0.5393,-0.172,16,1.0
+all gauges with events,zero_flow_frac,median_duration_uncensored,16,-0.095,-0.623,0.466,0.7306,-0.081,16,
+excluding flagged gauges,bfi,median_duration,13,0.259,-0.485,0.724,0.3953,0.065,13,
+excluding flagged gauges,bfi,median_duration_uncensored,13,0.118,-0.648,0.602,0.7019,-0.113,13,
+excluding flagged gauges,tau_rec_d,median_duration,13,0.507,-0.227,0.847,0.0834,0.414,13,
+excluding flagged gauges,tau_rec_d,median_duration_uncensored,13,0.391,-0.375,0.801,0.1822,0.279,13,
+excluding flagged gauges,zero_flow_frac,median_duration,13,-0.249,-0.696,0.357,0.4074,-0.156,13,
+excluding flagged gauges,zero_flow_frac,median_duration_uncensored,13,-0.125,-0.697,0.492,0.6852,-0.02,13,

@@ -1,0 +1,3 @@
+label,events,share_dry_onset,climatology,p_binom,opportunities,connected,up_spi_connected_median,up_spi_unconnected_median,p_mw_less,coherent_share_connected,coherent_share_unconnected,p_fisher_greater
+observed gauges 1961-2007,174,0.592,0.304,4.0271211390835965e-15,40,10,-1.36,-0.766,0.023661005429962783,0.8,0.567,0.1739832811939074
+reanalysis t2500 1961-2020,9392,0.461,0.305,1.447142074437857e-222,7252,5923,-0.91,-0.485,3.012759042966589e-48,0.476,0.413,1.5576909418554183e-05

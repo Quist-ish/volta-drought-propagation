@@ -1,0 +1,44 @@
+{
+ "all": {
+  "gauges": 17,
+  "gauge_years": 111,
+  "elasticity_P": 3.4077297135016504,
+  "elasticity_se": 0.3498521994953202,
+  "runoff_change_pct_per_decade": 14.491362209421798,
+  "lo95": 5.754527088612016,
+  "hi95": 23.949984756544396,
+  "p": 0.0008332280532247705,
+  "leave_one_gauge_out_range": [
+   11.38497177607265,
+   17.36000207170898
+  ]
+ },
+ "north of 10.5 N": {
+  "gauges": 13,
+  "gauge_years": 93,
+  "elasticity_P": 3.390537425280892,
+  "elasticity_se": 0.4165663153512146,
+  "runoff_change_pct_per_decade": 11.31807366313986,
+  "lo95": 4.81811785889017,
+  "hi95": 18.22110315655918,
+  "p": 0.0004776946628866223
+ },
+ "south of 10.5 N": {
+  "gauges": 4,
+  "gauge_years": 18,
+  "elasticity_P": 3.5064307878470533,
+  "elasticity_se": 0.5106861762948619,
+  "runoff_change_pct_per_decade": 55.03243375847471,
+  "lo95": 33.543883620595636,
+  "hi95": 79.9787071144385,
+  "p": 8.42023852434608e-09
+ },
+ "unregulated gauges": {
+  "gauges": 13,
+  "gauge_years": 63,
+  "runoff_change_pct_per_decade": 16.150731036998778,
+  "lo95": -0.4066603050623341,
+  "hi95": 35.4607884598831,
+  "p": 0.056382420039217666
+ }
+}

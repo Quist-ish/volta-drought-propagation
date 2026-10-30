@@ -1,0 +1,425 @@
+{
+  "fig1b_mean_discharge": {
+    "n": 18,
+    "mean": 89.975,
+    "median": 51.608,
+    "q25": 22.761,
+    "q75": 96.678,
+    "iqr": 73.917,
+    "min": 3.178,
+    "max": 407.456,
+    "min_station": "SAMBOALI",
+    "min_river": "SINGOU",
+    "max_station": "SABARI",
+    "max_river": "OTI"
+  },
+  "fig5_events": {
+    "duration": {
+      "n": 174,
+      "mean": 22.58,
+      "median": 13.0,
+      "q25": 8.0,
+      "q75": 26.0,
+      "iqr": 18.0,
+      "min": 5.0,
+      "max": 188.0
+    },
+    "severity": {
+      "n": 174,
+      "mean": 6.182,
+      "median": 2.724,
+      "q25": 1.121,
+      "q75": 6.42,
+      "iqr": 5.298,
+      "min": 0.048,
+      "max": 101.544
+    },
+    "intensity": {
+      "n": 174,
+      "mean": 0.23,
+      "median": 0.198,
+      "q25": 0.107,
+      "q75": 0.296,
+      "iqr": 0.189,
+      "min": 0.007,
+      "max": 1.081
+    },
+    "volumetric_hm3": {
+      "n": 174,
+      "mean": 16.271,
+      "median": 2.284,
+      "q25": 0.382,
+      "q75": 10.141,
+      "iqr": 9.759,
+      "min": 0.0,
+      "max": 384.562
+    }
+  },
+  "events_per_station": {
+    "n": 16,
+    "mean": 10.875,
+    "median": 8.0,
+    "q25": 4.0,
+    "q75": 13.5,
+    "iqr": 9.5,
+    "min": 2.0,
+    "max": 31.0,
+    "stations_without_events": [
+      1931400,
+      1931785
+    ]
+  },
+  "defined_share_by_station": {
+    "min": 0.187,
+    "max": 1.0,
+    "spearman_vs_latitude": [
+      -0.38,
+      0.1203
+    ]
+  },
+  "event_rate": {
+    "events": 174,
+    "station_years": 145.3,
+    "rate": 1.198,
+    "exact_poisson_ci": [
+      1.026,
+      1.389
+    ],
+    "block_bootstrap_ci": [
+      1.006,
+      1.4
+    ],
+    "ebro": 1.326,
+    "dispersion_index": 1.42
+  },
+  "fig6_chains": {
+    "duration": {
+      "n": 10,
+      "mean": 42.6,
+      "median": 35.5,
+      "q25": 21.5,
+      "q75": 65.0,
+      "iqr": 43.5,
+      "min": 14.0,
+      "max": 80.0
+    },
+    "size": {
+      "n": 10,
+      "mean": 2.0,
+      "median": 2.0,
+      "q25": 2.0,
+      "q75": 2.0,
+      "iqr": 0.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "propagation_fraction": {
+      "n": 10,
+      "mean": 0.4,
+      "median": 0.35,
+      "q25": 0.2,
+      "q75": 0.5,
+      "iqr": 0.3,
+      "min": 0.2,
+      "max": 1.0
+    },
+    "lag": {
+      "n": 10,
+      "mean": -13.1,
+      "median": -5.0,
+      "q25": -23.25,
+      "q75": -2.0,
+      "iqr": 21.25,
+      "min": -46.0,
+      "max": 0.0
+    },
+    "severity": {
+      "n": 10,
+      "mean": 15.502,
+      "median": 10.577,
+      "q25": 6.886,
+      "q75": 22.732,
+      "iqr": 15.847,
+      "min": 3.259,
+      "max": 44.014
+    },
+    "volumetric_hm3": {
+      "n": 10,
+      "mean": 70.837,
+      "median": 21.178,
+      "q25": 10.985,
+      "q75": 59.834,
+      "iqr": 48.849,
+      "min": 1.229,
+      "max": 399.519
+    }
+  },
+  "chains_origin_stations": [
+    1431300,
+    1531100,
+    1531450,
+    1531550,
+    1731400
+  ],
+  "pf_against_observing": {
+    "mean_catalogue_denominator": 0.4,
+    "mean_observing_denominator": 0.745,
+    "chains_with_single_observing_upstream": 6,
+    "note": "with every chain of size two, pf = 1/N_avail is fixed by topology"
+  },
+  "s7_isolated_vs_connected_all_origins": {
+    "severity": {
+      "n_a": 10,
+      "n_b": 94,
+      "mean_a": 6.9,
+      "mean_b": 5.68,
+      "ratio": 1.22,
+      "ratio_ci95": [
+        0.56,
+        2.14
+      ],
+      "mannwhitney_p": 0.357
+    },
+    "duration": {
+      "n_a": 10,
+      "n_b": 94,
+      "mean_a": 25.4,
+      "mean_b": 22.94,
+      "ratio": 1.11,
+      "ratio_ci95": [
+        0.61,
+        1.81
+      ],
+      "mannwhitney_p": 0.453
+    }
+  },
+  "s7_isolated_vs_connected_opportunities": {
+    "severity": {
+      "n_a": 10,
+      "n_b": 30,
+      "mean_a": 6.9,
+      "mean_b": 5.3,
+      "ratio": 1.3,
+      "ratio_ci95": [
+        0.54,
+        2.86
+      ],
+      "mannwhitney_p": 0.325
+    },
+    "duration": {
+      "n_a": 10,
+      "n_b": 30,
+      "mean_a": 25.4,
+      "mean_b": 24.83,
+      "ratio": 1.02,
+      "ratio_ci95": [
+        0.5,
+        1.91
+      ],
+      "mannwhitney_p": 0.434
+    },
+    "unconnected": 30,
+    "opportunities": 40
+  },
+  "s7_unconnected_by_station_pct": {
+    "1431300": 50.0,
+    "1531100": 84.6,
+    "1531450": 68.8,
+    "1531550": 66.7,
+    "1731400": 83.3
+  },
+  "s7_upstream_candidates_published_definition": {
+    "candidates": 20,
+    "never_accepted": 10,
+    "fraction_never_accepted": 0.5,
+    "severity": {
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 8.6,
+      "mean_b": 5.68,
+      "ratio": 1.51,
+      "ratio_ci95": [
+        0.55,
+        4.06
+      ],
+      "mannwhitney_p": 0.678
+    },
+    "duration": {
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 32.8,
+      "mean_b": 22.7,
+      "ratio": 1.44,
+      "ratio_ci95": [
+        0.77,
+        2.72
+      ],
+      "mannwhitney_p": 0.344
+    }
+  },
+  "s3": {
+    "n_pairs": 10,
+    "lag_vs_distance": [
+      0.387,
+      0.2692
+    ],
+    "lag_vs_intervening_area": [
+      -0.684,
+      0.0291
+    ],
+    "bonferroni_alpha_two_proxies": 0.025,
+    "lag_vs_upstream_duration": [
+      -0.745,
+      0.0135
+    ],
+    "intervening_area_vs_upstream_duration": [
+      0.689,
+      0.0275
+    ],
+    "lag_vs_area_partial_on_upstream_duration": [
+      -0.354,
+      0.3503
+    ],
+    "nawuni_only": {
+      "n": 5,
+      "lag_vs_intervening_area": [
+        -0.975,
+        0.0048
+      ]
+    },
+    "max_negative_lag_bound": "lag >= -(upstream_duration - M) by the overlap rule"
+  },
+  "w_identity": {
+    "distinct_n_pairs_across_W_within_any_M": 1,
+    "argument": "a candidate intersects [s0-W, s0], so s_u <= s0; overlap >= M >= 1 then forces e_u >= s0, so the candidate contains s0 and lies in the window for every W >= 0; the candidate set, and every metric, is independent of W"
+  },
+  "seasonal_validity": [
+    {
+      "variant": "default (40%, 0.10 m3/s)",
+      "defined_pct": 77.1,
+      "events": 174,
+      "rate": 1.198,
+      "events_onset_nov_apr": 32,
+      "pct_onset_nov_apr": 18.4,
+      "mean_duration": 22.6,
+      "max_duration": 188,
+      "origin_events": 104,
+      "opportunities": 40,
+      "chains": 10,
+      "cf_opportunities": 0.25,
+      "mean_pf": 0.4,
+      "max_chain_size": 2
+    },
+    {
+      "variant": "mask off",
+      "defined_pct": 93.4,
+      "events": 174,
+      "rate": 0.988,
+      "events_onset_nov_apr": 32,
+      "pct_onset_nov_apr": 18.4,
+      "mean_duration": 22.6,
+      "max_duration": 188,
+      "origin_events": 104,
+      "opportunities": 51,
+      "chains": 10,
+      "cf_opportunities": 0.196,
+      "mean_pf": 0.4,
+      "max_chain_size": 2
+    },
+    {
+      "variant": "zero fraction 30%",
+      "defined_pct": 71.3,
+      "events": 174,
+      "rate": 1.295,
+      "events_onset_nov_apr": 32,
+      "pct_onset_nov_apr": 18.4,
+      "mean_duration": 22.6,
+      "max_duration": 188,
+      "origin_events": 104,
+      "opportunities": 38,
+      "chains": 10,
+      "cf_opportunities": 0.263,
+      "mean_pf": 0.4,
+      "max_chain_size": 2
+    },
+    {
+      "variant": "zero fraction 50%",
+      "defined_pct": 81.0,
+      "events": 174,
+      "rate": 1.139,
+      "events_onset_nov_apr": 32,
+      "pct_onset_nov_apr": 18.4,
+      "mean_duration": 22.6,
+      "max_duration": 188,
+      "origin_events": 104,
+      "opportunities": 41,
+      "chains": 10,
+      "cf_opportunities": 0.244,
+      "mean_pf": 0.4,
+      "max_chain_size": 2
+    },
+    {
+      "variant": "median floor 0.05",
+      "defined_pct": 77.1,
+      "events": 174,
+      "rate": 1.197,
+      "events_onset_nov_apr": 32,
+      "pct_onset_nov_apr": 18.4,
+      "mean_duration": 22.6,
+      "max_duration": 188,
+      "origin_events": 104,
+      "opportunities": 40,
+      "chains": 10,
+      "cf_opportunities": 0.25,
+      "mean_pf": 0.4,
+      "max_chain_size": 2
+    },
+    {
+      "variant": "median floor 0.20",
+      "defined_pct": 76.9,
+      "events": 174,
+      "rate": 1.2,
+      "events_onset_nov_apr": 32,
+      "pct_onset_nov_apr": 18.4,
+      "mean_duration": 22.6,
+      "max_duration": 188,
+      "origin_events": 104,
+      "opportunities": 40,
+      "chains": 10,
+      "cf_opportunities": 0.25,
+      "mean_pf": 0.4,
+      "max_chain_size": 2
+    },
+    {
+      "variant": "Apr-Oct only",
+      "defined_pct": 51.3,
+      "events": 152,
+      "rate": 1.571,
+      "events_onset_nov_apr": 10,
+      "pct_onset_nov_apr": 6.6,
+      "mean_duration": 18.3,
+      "max_duration": 80,
+      "origin_events": 90,
+      "opportunities": 36,
+      "chains": 10,
+      "cf_opportunities": 0.278,
+      "mean_pf": 0.4,
+      "max_chain_size": 2
+    }
+  ],
+  "lawra_dapola_flip": {
+    "km_apart": 7.0,
+    "origin_stations": 8,
+    "origin_events": 135,
+    "no_upstream_observing_pct": 68.1,
+    "opportunities": 43,
+    "chains": 10,
+    "cf_opportunities": 0.233
+  },
+  "case_extremes": {
+    "longest": "1531450_27",
+    "most_severe": "1531550_9",
+    "largest_volume": "1531100_1",
+    "fastest_shortest": "1731400_14"
+  }
+}

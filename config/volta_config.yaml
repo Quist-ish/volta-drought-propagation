@@ -1,0 +1,255 @@
+# =============================================================================
+# Event-based hydrological drought propagation — Transboundary Volta Basin
+# Configuration file
+#
+# Port of the framework of Crespillo Lopez, Vicente-Serrano & Gimeno (2026),
+# Journal of Hydrology 680, 136544, originally applied to the Ebro Basin.
+#
+# EVERY parameter that differs from the Ebro implementation is marked [VOLTA]
+# with the reason. Parameters marked [EBRO-IDENTICAL] are carried over
+# unchanged so that the two applications remain directly comparable.
+# =============================================================================
+
+project:
+  name: "Volta_drought_propagation"
+  basin: "Transboundary Volta Basin"
+  # ---------------------------------------------------------------------------
+  # STUDY PERIOD
+  # GloFAS historical reanalysis (v4.0/v5.0) begins 1979-01-01. A literal
+  # 50-year window (1975-2024) is NOT supported by that product. Set
+  # `period_mode` to control this; see docs/DATA_AUDIT.md.
+  #   glofas_native : 1979-2024 (46 years) -- recommended, fully defensible
+  #   extended      : 1975-2024 (50 years) -- requires a locally produced
+  #                   discharge series (e.g. WRF-Hydro / SWAT) for 1975-1978
+  # ---------------------------------------------------------------------------
+  period_mode: "glofas_native"
+  start_date: "1979-01-01"
+  end_date:   "2024-12-31"
+
+paths:
+  # --- Edit these to your machine. Windows paths may use forward slashes. ---
+  root:            "D:/PROGRESS_PAPERS/3nd_Objective/Data/04_FULL_POLITICAL_VOLTA_DATA"
+  boundary:        "${root}/00_boundary"
+  dem_hydro:       "${root}/04_DEM_MERIT_Hydro_HAND"
+  streamflow:      "${root}/10_streamflow_GRDC_GloFAS"
+  reservoirs:      "${root}/07_reservoirs_JRC_altimetry"
+  precipitation:   "${root}/01_precipitation_CHIRPS_CRU"
+  era5_land:       "${root}/02_ERA5_Land_full_basin_daily_AMJJASO"
+  lulc:            "${root}/05_land_cover_LULC"
+  work:            "./data"
+  figures:         "./output/figures"
+  tables:          "./output/tables"
+
+# =============================================================================
+# 0. RIVER NETWORK AND VIRTUAL GAUGING NODES                          [VOLTA]
+# -----------------------------------------------------------------------------
+# The Ebro study used 33 real CEDEX gauges and derived connectivity in QGIS.
+# The Volta has no comparable observational network (see DATA_AUDIT.md), so the
+# node set is constructed on the MERIT Hydro river network and discharge is
+# extracted from GloFAS at each node. Real GRDC/HSD gauges are retained as a
+# validation subset, never as the primary network.
+# =============================================================================
+network:
+  # Minimum upstream drainage area for a cell to be treated as a channel.
+  # 1000 km2 keeps the network at a size comparable to the Ebro application
+  # and avoids GloFAS headwater cells where LISFLOOD skill is weakest.
+  min_upstream_area_km2: 1000
+
+  # Node placement rules, applied in this order; duplicates within
+  # `node_merge_distance_km` of an existing node are dropped.
+  place_at_real_gauges:   true     # GRDC + national (HSD Ghana, DGRE Burkina)
+  place_at_confluences:   true     # junctions of two channels above threshold
+  place_at_basin_outlet:  true
+  place_along_channel:    true
+  along_channel_spacing_km: 75     # regular spacing on long un-branched reaches
+  node_merge_distance_km:   15
+
+  # Target network size. If the rules yield more nodes, the lowest-ranked
+  # along-channel nodes are dropped first (confluences and real gauges kept).
+  target_n_nodes: 40
+  max_n_nodes:    60
+
+  # Snapping tolerance when moving a real gauge onto the derived channel.
+  gauge_snap_tolerance_km: 5
+
+  # Sub-basin labels used throughout the figures and tables.
+  subbasins: ["Black Volta", "White Volta", "Oti", "Lower Volta"]
+  countries: ["Burkina Faso", "Ghana", "Togo", "Mali", "Benin", "Cote d'Ivoire"]
+
+# =============================================================================
+# 1. DISCHARGE SOURCE AND QUALITY CONTROL
+# =============================================================================
+discharge:
+  primary_source: "GloFAS"          # [VOLTA] reanalysis, not observed gauges
+  glofas_version: "v4.0"
+  validation_source: "GRDC"         # observed, used only for benchmarking
+
+  # --- Ebro QC thresholds, retained for the GRDC validation subset ---
+  qc:
+    max_pct_nan:      0.30          # [EBRO-IDENTICAL]
+    max_nan_run_days: 365           # [EBRO-IDENTICAL]
+    # ---------------------------------------------------------------------
+    # [VOLTA] The Ebro excluded stations with zero-flow runs > 120 days.
+    # Applied literally to the Volta this removes the entire Sahelian north,
+    # where channels are dry for 5-7 months in a normal year. Zero-flow is a
+    # climatological feature here, not a data defect, so the criterion is
+    # replaced by the seasonal-validity rule in `ssi.seasonal_validity` and
+    # this threshold is relaxed to a value that still catches true sensor
+    # failure at perennial nodes.
+    # ---------------------------------------------------------------------
+    max_zero_run_days: 240          # [VOLTA] relaxed from 120
+    enforce_zero_run_on: "perennial_only"
+
+# =============================================================================
+# 2. IMPUTATION (GRDC validation subset only; GloFAS has no gaps)
+# =============================================================================
+imputation:                          # [EBRO-IDENTICAL]
+  level1_max_gap_days: 15            # log-space linear interpolation
+  level2_n_donors: 10                # nearest stations considered
+  level2_min_overlap_days: 1500
+  level2_min_pearson_r: 0.75         # on log-transformed flows
+  level3_fallback: "doy_climatology_median"
+
+# =============================================================================
+# 3. STANDARDISED STREAMFLOW INDEX (SSI)
+# =============================================================================
+ssi:                                 # [EBRO-IDENTICAL unless marked]
+  doy_window_days: 15                # +/-15-day circular pooling window
+  min_pool_size: 30
+  min_positive_for_fit: 10
+  # Six three-parameter families, fitted by L-moments and selected by minimum
+  # AIC, following Vicente-Serrano et al. (2025), the method the Ebro study
+  # cites. GLO is the generalised-logistic (log-logistic) family and LNO the
+  # three-parameter log-normal, implemented as the generalised normal.
+  distributions: ["GEV", "GLO", "GPA", "LNO", "PE3", "WEI"]
+  parameter_estimator: "l_moments"
+  selection_statistic: "aic"
+  # Shapiro-Wilks is retained as a post-hoc normality diagnostic on the
+  # standardised series and is logged per node and day of year. It no longer
+  # selects the family; that was a deviation, corrected 12 October 2026.
+  normality_diagnostic: "shapiro_w"
+  zero_flow_adjustment: true
+
+  # ---------------------------------------------------------------------------
+  # [VOLTA] SEASONAL VALIDITY MASK — the single most important adaptation.
+  #
+  # The Volta regime is strongly monomodal. In the dry season the pooled DOY
+  # sample at northern nodes is dominated by zeros or near-zeros, and a
+  # standardised index fitted to that sample is not interpretable: a station
+  # cannot be "in drought" relative to a climatology of no flow. SSI is
+  # therefore set to NaN for any (node, DOY) whose pooled sample fails these
+  # tests, and such days can neither start nor sustain a drought event.
+  #
+  # Report the resulting valid-day fraction per node in the Supplementary
+  # Material; it is a required transparency item for this basin.
+  # ---------------------------------------------------------------------------
+  seasonal_validity:
+    enabled: true
+    max_zero_fraction: 0.40          # pooled sample must be <40% zero flow
+    min_pooled_median_q_m3s: 0.10    # and have a non-trivial median flow
+    # Alternative, coarser mask used as a sensitivity test (Section S2):
+    # restrict detection to the hydrologically active season outright.
+    sensitivity_season_months: [4, 5, 6, 7, 8, 9, 10]   # AMJJASO
+
+# =============================================================================
+# 4. DROUGHT EVENT DETECTION
+# =============================================================================
+events:                              # [EBRO-IDENTICAL]
+  threshold_ssi: -1.28               # P10 of the standard normal
+  pool_gap_days: 10
+  min_duration_days: 5
+  volumetric_percentile: 10          # DOY-varying Q_p10 for volumetric severity
+  m3s_to_hm3_per_day: 0.0864
+
+# =============================================================================
+# 5. PROPAGATION CHAIN CONSTRUCTION
+# =============================================================================
+propagation:                         # [EBRO-IDENTICAL]
+  W_days: 45                         # asymmetric look-back window
+  min_overlap_days: 5
+  lag_max: 0                         # retain only upstream_start <= origin_start
+  # Deterministic tie-break order: overlap desc, severity desc,
+  # |start difference| asc, event_id asc.
+
+# =============================================================================
+# 6. PARAMETER SENSITIVITY
+# =============================================================================
+sensitivity:                         # [EBRO-IDENTICAL]
+  W_grid:  {min: 0, max: 120, step: 5}
+  M_grid:  {min: 1, max: 30,  step: 1}
+  kneedle_curve: "concave"
+  kneedle_direction: "increasing"
+
+# =============================================================================
+# 7. VOLTA-SPECIFIC EXTENSIONS (no Ebro counterpart)
+# =============================================================================
+transboundary:                       # [VOLTA]
+  enabled: true
+  # Chains are classified by whether the origin and its matched upstream
+  # nodes fall in the same riparian state.
+  report_country_matrix: true
+  # Upstream-area-weighted contribution of each country to each chain.
+  weight_by_upstream_area: true
+
+regulation:                          # [VOLTA]
+  enabled: true
+  # ---------------------------------------------------------------------------
+  # VERIFIED against Global Dam Watch v1.0, Volta basin extract
+  # (Volta_GDW_v1_reservoirs_attributes.csv), 11 October 2026.
+  # The full 93-reservoir inventory is written to data/reservoirs.csv by the
+  # build step; the entries below are the ones the diagnostics name explicitly.
+  #
+  # Four of my earlier values were wrong and are corrected here. One of my
+  # "corrections" was itself wrong: I had Ziga at 2000, changed it to 2004 on
+  # the PAGEV audit, and GDW gives 2000. The original value was right. A 2004
+  # regional audit does not override the maintained global inventory, and all
+  # of these now come from GDW.
+  #
+  # `in_lisflood` applies the global LISFLOOD rule (>=100 hm3 storage,
+  # >=250 km2 catchment, degree of regulation >=0.08). Of the 93 Volta
+  # reservoirs in GDW, 11 are represented in the GloFAS forcing and 82 are
+  # not; the invisible ones total roughly 648 MCM of storage.
+  # ---------------------------------------------------------------------------
+  reservoirs:
+    - {name: "Akosombo",  country: "Ghana",        year: 1965, capacity_mcm: 148000.0, catch_skm: 404375, dor_pc: 342.0, in_lisflood: true}
+    - {name: "Bui",       country: "Ghana",        year: 2013, capacity_mcm:  12570.0, catch_skm: 131352, dor_pc: 155.6, in_lisflood: true}
+    - {name: "Kompienga", country: "Burkina Faso", year: 1984, capacity_mcm:   2000.0, catch_skm:   5927, dor_pc: 630.7, in_lisflood: true}
+    - {name: "Bagre",     country: "Burkina Faso", year: 1992, capacity_mcm:   1700.0, catch_skm:  35477, dor_pc: 101.1, in_lisflood: true}
+    - {name: "Samendeni", country: "Burkina Faso", year: 2017, capacity_mcm:   1050.0, catch_skm:   4234, dor_pc: 317.7, in_lisflood: true}
+    - {name: "Lery",      country: "Burkina Faso", year: 1976, capacity_mcm:    250.0, catch_skm:  31184, dor_pc:  15.1, in_lisflood: true}
+    - {name: "Ziga",      country: "Burkina Faso", year: 2000, capacity_mcm:    208.0, catch_skm:  20764, dor_pc:  85.8, in_lisflood: true}
+    - {name: "Soum",      country: "Burkina Faso", year: 2010, capacity_mcm:    203.0, catch_skm:   1575, dor_pc: 496.7, in_lisflood: true}
+    - {name: "Kpong",     country: "Ghana",        year: 1981, capacity_mcm:    200.0, catch_skm: 405019, dor_pc:   0.5, in_lisflood: true}
+    - {name: "Tono",      country: "Ghana",        year: 1977, capacity_mcm:     76.5, catch_skm:    670, dor_pc:  81.3, in_lisflood: false}
+    - {name: "Vea",       country: "Ghana",        year: null, capacity_mcm:     17.3, catch_skm:    146, dor_pc:  94.1, in_lisflood: false}
+  downstream_influence_km: 150
+  # A breakpoint candidate must be commissioned INSIDE the study period. For an
+  # observed-discharge study over 1975-2006, Bui (2013) is out of range; Bagre
+  # (1992) and Ziga (2000) are the usable candidates, and Bagre is the stronger
+  # one, being far larger and on the White Volta main stem.
+  breakpoint_test_reservoir: "Bagre"
+
+validation:                          # [VOLTA]
+  # The uncertainty assessment Crespillo Lopez et al. (2026) called for when
+  # transferring the framework to reanalysis discharge.
+  glofas_vs_grdc:
+    enabled: true
+    metrics: ["KGE", "NSE_log", "pbias", "r_spearman",
+              "low_flow_KGE", "Q10_bias", "SSI_rank_correlation"]
+    low_flow_quantile: 0.10
+    # Event-level agreement between GRDC-derived and GloFAS-derived catalogues
+    event_match_tolerance_days: 10
+
+figures:
+  dpi: 400
+  format: ["pdf", "png"]
+  font_family: "DejaVu Sans"
+  # Ebro figure palette, retained so the two papers read as a pair.
+  palette:
+    moderate: "#F5C26B"
+    severe:   "#E07B39"
+    extreme:  "#A4133C"
+    daily_ssi: "#1B3B6F"
+  severity_breaks: {moderate: -1.28, severe: -1.65, extreme: -2.00}
+
+random_seed: 42

@@ -1,0 +1,61 @@
+{
+  "stations": 18,
+  "stations_with_events": 16,
+  "obs": 67532,
+  "filled_tier1": 1327,
+  "defined_pct": 77.1,
+  "station_years": 145.3,
+  "events": 174,
+  "rate": 1.198,
+  "rate_ci": [
+    1.026,
+    1.389
+  ],
+  "ebro_rate": 1.326,
+  "dur_mean": 22.6,
+  "dur_median": 13.0,
+  "dur_max": 188,
+  "sev_mean": 6.18,
+  "sev_median": 2.72,
+  "int_mean": 0.23,
+  "vol_mean": 16.27,
+  "origin_events": 104,
+  "no_upstream_observing": 64,
+  "no_upstream_pct": 61.5,
+  "opportunities": 40,
+  "cf_opp": 0.25,
+  "cf_opp_ci": [
+    0.142,
+    0.402
+  ],
+  "p_vs_ebro": 5.0020216528051984e-05,
+  "power_abs": 0.46,
+  "power_rel": 0.05,
+  "chain_sizes": [
+    2
+  ],
+  "null_p": {
+    "connected_fraction": 0.193,
+    "mean_chain_size": 0.995,
+    "mean_propagation_fraction": 0.446,
+    "chain_count": 0.061,
+    "total_valid_pairs": 0.083
+  },
+  "s3_dist": [
+    0.387,
+    0.269
+  ],
+  "s3_area": [
+    -0.684,
+    0.029
+  ],
+  "s3_origins": {
+    "1531450": 5,
+    "1531100": 2,
+    "1431300": 1,
+    "1531550": 1,
+    "1731400": 1
+  },
+  "s9_flagged": 16,
+  "s9_n": 18
+}

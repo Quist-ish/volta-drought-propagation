@@ -1,0 +1,13 @@
+Signature,Sample,n,Spearman ρ,95% CI,p (permutation),Partial ρ,Holm-adjusted p
+Baseflow index,All gauges,16,0.162,−0.486 to 0.634,0.550,0.128,1.000
+Baseflow index,"All gauges, uncensored events",16,0.087,−0.550 to 0.576,0.744,0.035,–
+Recession timescale,All gauges,16,0.408,−0.247 to 0.796,0.117,0.396,0.350
+Recession timescale,"All gauges, uncensored events",16,0.329,−0.311 to 0.757,0.212,0.307,–
+Zero-flow share,All gauges,16,−0.161,−0.648 to 0.388,0.539,−0.172,1.000
+Zero-flow share,"All gauges, uncensored events",16,−0.095,−0.623 to 0.466,0.731,−0.081,–
+Baseflow index,Excluding flagged,13,0.259,−0.485 to 0.724,0.395,0.065,–
+Baseflow index,"Excluding flagged, uncensored events",13,0.118,−0.648 to 0.602,0.702,−0.113,–
+Recession timescale,Excluding flagged,13,0.507,−0.227 to 0.847,0.083,0.414,–
+Recession timescale,"Excluding flagged, uncensored events",13,0.391,−0.375 to 0.801,0.182,0.279,–
+Zero-flow share,Excluding flagged,13,−0.249,−0.696 to 0.357,0.407,−0.156,–
+Zero-flow share,"Excluding flagged, uncensored events",13,−0.125,−0.697 to 0.492,0.685,−0.020,–

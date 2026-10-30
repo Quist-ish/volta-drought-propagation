@@ -1,0 +1,332 @@
+{
+  "index_variants": [
+    {
+      "variant": "default (six families, AIC, +/-15 d, own record)",
+      "events": 174,
+      "rate": 1.198,
+      "defined_station_years": 145.3,
+      "station_count_rho_vs_default": 1.0,
+      "default_events_reproduced": 1.0,
+      "variant_events_in_default": 1.0,
+      "chains": 10,
+      "default_chains_reproduced": 10,
+      "max_chain_size": 2,
+      "opportunities": 40,
+      "cf_opportunities": 0.25,
+      "null_p_connected_fraction": 0.197
+    },
+    {
+      "variant": "GEV only",
+      "events": 169,
+      "rate": 1.163,
+      "defined_station_years": 145.3,
+      "station_count_rho_vs_default": 0.997,
+      "default_events_reproduced": 0.948,
+      "variant_events_in_default": 0.982,
+      "chains": 9,
+      "default_chains_reproduced": 7,
+      "max_chain_size": 2,
+      "opportunities": 40,
+      "cf_opportunities": 0.225,
+      "null_p_connected_fraction": 0.22
+    },
+    {
+      "variant": "GLO only",
+      "events": 164,
+      "rate": 1.158,
+      "defined_station_years": 141.6,
+      "station_count_rho_vs_default": 0.989,
+      "default_events_reproduced": 0.902,
+      "variant_events_in_default": 0.97,
+      "chains": 9,
+      "default_chains_reproduced": 5,
+      "max_chain_size": 2,
+      "opportunities": 42,
+      "cf_opportunities": 0.214,
+      "null_p_connected_fraction": 0.212
+    },
+    {
+      "variant": "GPA only",
+      "events": 177,
+      "rate": 1.218,
+      "defined_station_years": 145.3,
+      "station_count_rho_vs_default": 0.99,
+      "default_events_reproduced": 0.989,
+      "variant_events_in_default": 0.966,
+      "chains": 10,
+      "default_chains_reproduced": 9,
+      "max_chain_size": 2,
+      "opportunities": 40,
+      "cf_opportunities": 0.25,
+      "null_p_connected_fraction": 0.214
+    },
+    {
+      "variant": "LNO only",
+      "events": 167,
+      "rate": 1.257,
+      "defined_station_years": 132.9,
+      "station_count_rho_vs_default": 0.992,
+      "default_events_reproduced": 0.902,
+      "variant_events_in_default": 0.988,
+      "chains": 7,
+      "default_chains_reproduced": 6,
+      "max_chain_size": 2,
+      "opportunities": 41,
+      "cf_opportunities": 0.171,
+      "null_p_connected_fraction": 0.431
+    },
+    {
+      "variant": "PE3 only",
+      "events": 197,
+      "rate": 1.356,
+      "defined_station_years": 145.3,
+      "station_count_rho_vs_default": 0.944,
+      "default_events_reproduced": 0.989,
+      "variant_events_in_default": 0.858,
+      "chains": 12,
+      "default_chains_reproduced": 7,
+      "max_chain_size": 3,
+      "opportunities": 42,
+      "cf_opportunities": 0.286,
+      "null_p_connected_fraction": 0.18
+    },
+    {
+      "variant": "WEI only",
+      "events": 185,
+      "rate": 1.276,
+      "defined_station_years": 145.0,
+      "station_count_rho_vs_default": 0.956,
+      "default_events_reproduced": 0.983,
+      "variant_events_in_default": 0.914,
+      "chains": 11,
+      "default_chains_reproduced": 7,
+      "max_chain_size": 3,
+      "opportunities": 40,
+      "cf_opportunities": 0.275,
+      "null_p_connected_fraction": 0.179
+    },
+    {
+      "variant": "pooling +/-30 d",
+      "events": 130,
+      "rate": 0.891,
+      "defined_station_years": 145.9,
+      "station_count_rho_vs_default": 0.965,
+      "default_events_reproduced": 0.707,
+      "variant_events_in_default": 0.962,
+      "chains": 5,
+      "default_chains_reproduced": 2,
+      "max_chain_size": 2,
+      "opportunities": 34,
+      "cf_opportunities": 0.147,
+      "null_p_connected_fraction": 0.277
+    },
+    {
+      "variant": "common reference 1975-1992",
+      "events": 119,
+      "rate": 0.984,
+      "defined_station_years": 120.9,
+      "station_count_rho_vs_default": 0.595,
+      "default_events_reproduced": 0.534,
+      "variant_events_in_default": 0.798,
+      "chains": 5,
+      "default_chains_reproduced": 1,
+      "max_chain_size": 2,
+      "opportunities": 33,
+      "cf_opportunities": 0.152,
+      "null_p_connected_fraction": 0.208
+    }
+  ],
+  "chain_stability": [
+    {
+      "origin_node": 1431300,
+      "upstream_node": 1531050,
+      "origin_start": "1993-05-18",
+      "variants_reproducing_of_8": 5
+    },
+    {
+      "origin_node": 1531100,
+      "upstream_node": 1531050,
+      "origin_start": "1976-08-07",
+      "variants_reproducing_of_8": 6
+    },
+    {
+      "origin_node": 1531100,
+      "upstream_node": 1531050,
+      "origin_start": "2005-08-07",
+      "variants_reproducing_of_8": 6
+    },
+    {
+      "origin_node": 1531450,
+      "upstream_node": 1531600,
+      "origin_start": "1976-06-25",
+      "variants_reproducing_of_8": 5
+    },
+    {
+      "origin_node": 1531450,
+      "upstream_node": 1531550,
+      "origin_start": "1988-06-03",
+      "variants_reproducing_of_8": 7
+    },
+    {
+      "origin_node": 1531450,
+      "upstream_node": 1531430,
+      "origin_start": "1990-10-26",
+      "variants_reproducing_of_8": 5
+    },
+    {
+      "origin_node": 1531450,
+      "upstream_node": 1531420,
+      "origin_start": "1996-07-30",
+      "variants_reproducing_of_8": 7
+    },
+    {
+      "origin_node": 1531450,
+      "upstream_node": 1531430,
+      "origin_start": "1997-08-02",
+      "variants_reproducing_of_8": 4
+    },
+    {
+      "origin_node": 1531550,
+      "upstream_node": 1531600,
+      "origin_start": "1990-08-24",
+      "variants_reproducing_of_8": 7
+    },
+    {
+      "origin_node": 1731400,
+      "upstream_node": 1931880,
+      "origin_start": "1983-09-06",
+      "variants_reproducing_of_8": 5
+    }
+  ],
+  "opportunity_threshold": [
+    {
+      "min_defined_days": 1,
+      "origin_events": 104,
+      "opportunities": 41,
+      "pct_without_observing_upstream": 60.6,
+      "cf_opportunities": 0.244,
+      "wilson_lo": 0.138,
+      "wilson_hi": 0.393,
+      "p_below_ebro": 2.844800904064321e-05
+    },
+    {
+      "min_defined_days": 5,
+      "origin_events": 104,
+      "opportunities": 40,
+      "pct_without_observing_upstream": 61.5,
+      "cf_opportunities": 0.25,
+      "wilson_lo": 0.142,
+      "wilson_hi": 0.402,
+      "p_below_ebro": 5.0020216528051984e-05
+    },
+    {
+      "min_defined_days": 10,
+      "origin_events": 104,
+      "opportunities": 39,
+      "pct_without_observing_upstream": 62.5,
+      "cf_opportunities": 0.256,
+      "wilson_lo": 0.146,
+      "wilson_hi": 0.411,
+      "p_below_ebro": 8.729937693256019e-05
+    },
+    {
+      "min_defined_days": 20,
+      "origin_events": 104,
+      "opportunities": 37,
+      "pct_without_observing_upstream": 64.4,
+      "cf_opportunities": 0.27,
+      "wilson_lo": 0.154,
+      "wilson_hi": 0.43,
+      "p_below_ebro": 0.0002596125129503988
+    }
+  ],
+  "power_simulation": [
+    {
+      "injection_rate": 0.0,
+      "mean_cf_opportunities": 0.25,
+      "power": 0.0,
+      "n_sim": 100,
+      "n_perm": 299
+    },
+    {
+      "injection_rate": 0.2,
+      "mean_cf_opportunities": 0.365,
+      "power": 0.25,
+      "n_sim": 100,
+      "n_perm": 299
+    },
+    {
+      "injection_rate": 0.4,
+      "mean_cf_opportunities": 0.479,
+      "power": 0.85,
+      "n_sim": 100,
+      "n_perm": 299
+    },
+    {
+      "injection_rate": 0.6,
+      "mean_cf_opportunities": 0.58,
+      "power": 0.97,
+      "n_sim": 100,
+      "n_perm": 299
+    },
+    {
+      "injection_rate": 0.8,
+      "mean_cf_opportunities": 0.685,
+      "power": 1.0,
+      "n_sim": 100,
+      "n_perm": 299
+    }
+  ],
+  "koppen_pct": {
+    "Aw": 72.3,
+    "BSh": 27.7,
+    "BWh": 0.1
+  },
+  "koppen_n_points": 13568,
+  "sahel_dry_years_z_le_-0.5": [
+    1968,
+    1972,
+    1973,
+    1977,
+    1982,
+    1983,
+    1984,
+    1985,
+    1986,
+    1987,
+    1990,
+    1997,
+    2002,
+    2004,
+    2007
+  ],
+  "sahel_case_years_z": {
+    "1976": 0.19,
+    "1983": -1.88,
+    "1990": -1.25,
+    "1997": -0.7
+  },
+  "sahel_case_years_rank_driest_of_47": {
+    "1976": 30,
+    "1983": 2,
+    "1990": 5,
+    "1997": 11
+  },
+  "s8_analogue": {
+    "dry_years_n": 15,
+    "exposure_share_in_dry_years": 0.272,
+    "event_rate_dry": 1.621,
+    "event_rate_other": 1.04,
+    "rate_ratio": 1.56,
+    "p_rate_ratio_one_sided": 0.0035441515765913087,
+    "event_share_in_dry_years": 0.368,
+    "severity_dry_vs_other_median": [
+      3.6,
+      2.18
+    ],
+    "severity_mannwhitney_p_one_sided": 0.017778724493961787,
+    "chains_in_dry_years": 4,
+    "chains": 10,
+    "p_chains_binomial_vs_coverage": 0.2769075439476712
+  }
+}

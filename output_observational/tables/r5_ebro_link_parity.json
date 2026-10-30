@@ -1,0 +1,12 @@
+{
+ "links": 101,
+ "published_pairs": 1512,
+ "reconstructed_pairs": 2075,
+ "links_count_differ": 93,
+ "count_diff_abs_median": 6.0,
+ "count_diff_abs_max": 13.0,
+ "links_lag_differ": 72,
+ "lag_diff_median": 4.0,
+ "lag_diff_max": 209.0,
+ "links_either": 93
+}

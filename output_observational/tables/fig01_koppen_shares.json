@@ -1,0 +1,8 @@
+{
+  "koppen_pct": {
+    "Tropical savanna (Aw)": 72.3,
+    "Hot semi-arid steppe (BSh)": 27.7,
+    "Hot desert (BWh)": 0.1
+  },
+  "n_cells": 13568
+}

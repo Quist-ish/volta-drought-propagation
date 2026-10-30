@@ -1,0 +1,24 @@
+Derived data, tables and figures
+
+Copyright (c) 2026 Ishmeal Quist
+
+The derived data in output_*/, data/reanalysis/, figures_pub/supp_tables/, manifest/,
+verification/ and the figures in figures/ are licensed under the Creative Commons Attribution
+4.0 International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+When you use them, cite the article and this archive (see CITATION.cff).
+
+Exceptions, which keep the terms of their providers (see DATA.md):
+  - data/ebro/ and third_party/Code_v.1/: Crespillo López (2026), MIT licence;
+  - data/external/: NOAA PSL climate indices and Sahel precipitation index (US Government
+    works; cite JISAO (2019) for the Sahel index) and Natural Earth (public domain);
+  - data/GRDC_VOLTA_POLITICAL_TRANSBOUNDARY_BASIN.* and the GRDC station fields in
+    data/grdc_*.csv: Global Runoff Data Centre, attribution required;
+  - data/external/cmip6/: catalogue metadata of the Pangeo CMIP6 archive.
+
+The derived quantities computed from GRDC discharge (standardised indices, events, link tables,
+annual runoff coefficients, signatures and summary statistics) do not allow the daily records to
+be reconstructed. The daily records themselves are not part of this repository and remain subject
+to the GRDC data policy.
+
+The code is licensed separately under the MIT licence (LICENSE).

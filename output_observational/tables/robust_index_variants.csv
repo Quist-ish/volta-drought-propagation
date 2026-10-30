@@ -1,0 +1,10 @@
+variant,events,rate,defined_station_years,station_count_rho_vs_default,default_events_reproduced,variant_events_in_default,chains,default_chains_reproduced,max_chain_size,opportunities,cf_opportunities,null_p_connected_fraction
+"default (six families, AIC, +/-15 d, own record)",174,1.198,145.3,1.0,1.0,1.0,10,10,2,40,0.25,0.197
+GEV only,169,1.163,145.3,0.997,0.948,0.982,9,7,2,40,0.225,0.22
+GLO only,164,1.158,141.6,0.989,0.902,0.97,9,5,2,42,0.214,0.212
+GPA only,177,1.218,145.3,0.99,0.989,0.966,10,9,2,40,0.25,0.214
+LNO only,167,1.257,132.9,0.992,0.902,0.988,7,6,2,41,0.171,0.431
+PE3 only,197,1.356,145.3,0.944,0.989,0.858,12,7,3,42,0.286,0.18
+WEI only,185,1.276,145.0,0.956,0.983,0.914,11,7,3,40,0.275,0.179
+pooling +/-30 d,130,0.891,145.9,0.965,0.707,0.962,5,2,2,34,0.147,0.277
+common reference 1975-1992,119,0.984,120.9,0.595,0.534,0.798,5,1,2,33,0.152,0.208

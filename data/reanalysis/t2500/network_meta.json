@@ -1,0 +1,36 @@
+{
+  "tag": "t2500",
+  "threshold_km2": 2500.0,
+  "spacing_km": 75.0,
+  "merge_km": 15.0,
+  "area_tol": 0.35,
+  "akosombo_reach": 140462856,
+  "domain_reaches": 20023,
+  "channel_reaches": 2462,
+  "lake_reaches_excluded": 983,
+  "below_lake_excluded": 2,
+  "nodes": 129,
+  "by_kind": {
+    "reach": 79,
+    "confluence": 32,
+    "gauge": 18
+  },
+  "origin_nodes": 98,
+  "directed_links": 1429,
+  "immediate_link_km": {
+    "median": 64.23,
+    "max": 150.34
+  },
+  "countries": {
+    "Ghana": 59,
+    "Burkina Faso": 47,
+    "Togo": 12,
+    "Benin": 5,
+    "Mali": 5,
+    "C\u00f4te d'Ivoire": 1
+  },
+  "gauges_by_rule": {
+    "within 3 km, area consistent": 17,
+    "near, GRDC area inconsistent": 1
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "volta_pairs": {
+    "W0": {
+      "n_pairs": 10,
+      "identical_to_voltaprop": true,
+      "positive_lag_candidates": 0
+    },
+    "W45": {
+      "n_pairs": 10,
+      "identical_to_voltaprop": true,
+      "positive_lag_candidates": 0
+    },
+    "W120": {
+      "n_pairs": 10,
+      "identical_to_voltaprop": true,
+      "positive_lag_candidates": 0
+    }
+  },
+  "volta_original_null": {
+    "connected_fraction": {
+      "observed": 9.6154,
+      "null_mean": 7.0317,
+      "p": 0.201
+    },
+    "mean_chain_size": {
+      "observed": 2.0,
+      "null_mean": 2.0716,
+      "p": 0.993
+    },
+    "mean_propagation_fraction": {
+      "observed": 0.4,
+      "null_mean": 0.4042,
+      "p": 0.452
+    },
+    "n_chains": {
+      "observed": 10.0,
+      "null_mean": 5.2226,
+      "p": 0.076
+    },
+    "n_valid_pairs": {
+      "observed": 10.0,
+      "null_mean": 5.5678,
+      "p": 0.092
+    }
+  },
+  "ebro_reproduction": {
+    "events": 2625,
+    "stations": 33,
+    "links": 101,
+    "origin_stations": 12,
+    "statistics": {
+      "connected_fraction": {
+        "published_observed": 56.57327586206897,
+        "reproduced_observed": 56.57327586206896,
+        "published_null_mean": 50.309250468598535,
+        "reproduced_null_mean": 50.30925046859854,
+        "published_p": 0.02,
+        "reproduced_p": 0.02
+      },
+      "mean_chain_size": {
+        "published_observed": 4.9523809523809526,
+        "reproduced_observed": 4.9523809523809526,
+        "published_null_mean": 4.283477212708031,
+        "reproduced_null_mean": 4.283477212708031,
+        "published_p": 0.0115,
+        "reproduced_p": 0.0115
+      },
+      "mean_propagation_fraction": {
+        "published_observed": 0.4181909400123686,
+        "reproduced_observed": 0.4181909400123686,
+        "published_null_mean": 0.39277785873472,
+        "reproduced_null_mean": 0.39277785873472004,
+        "published_p": 0.156,
+        "reproduced_p": 0.156
+      },
+      "n_chains": {
+        "published_observed": 525.0,
+        "reproduced_observed": 525.0,
+        "published_null_mean": 480.1345672836418,
+        "reproduced_null_mean": 480.13456728364184,
+        "published_p": 0.123,
+        "reproduced_p": 0.123
+      },
+      "n_valid_pairs": {
+        "published_observed": 2075.0,
+        "reproduced_observed": 2075.0,
+        "published_null_mean": 1578.064532266133,
+        "reproduced_null_mean": 1578.064532266133,
+        "published_p": 0.004,
+        "reproduced_p": 0.004
+      }
+    },
+    "all_match": true
+  },
+  "original_null": {
+    "connected_fraction": {
+      "observed": 9.6154,
+      "null_mean": 7.0317,
+      "p": 0.201
+    },
+    "mean_chain_size": {
+      "observed": 2.0,
+      "null_mean": 2.0716,
+      "p": 0.993
+    },
+    "mean_propagation_fraction": {
+      "observed": 0.4,
+      "null_mean": 0.4042,
+      "p": 0.452
+    },
+    "n_chains": {
+      "observed": 10.0,
+      "null_mean": 5.2226,
+      "p": 0.076
+    },
+    "n_valid_pairs": {
+      "observed": 10.0,
+      "null_mean": 5.5678,
+      "p": 0.092
+    }
+  },
+  "n_pairs": 10,
+  "pairs_identical": true
+}

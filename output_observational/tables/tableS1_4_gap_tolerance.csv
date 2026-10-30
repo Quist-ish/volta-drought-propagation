@@ -1,0 +1,7 @@
+gap_tolerance_days,new_pairs,pct_more_than_accepted,connected_fraction_before,connected_fraction_after,median_severity_new,median_severity_accepted,severity_ratio
+0,0,0.0,0.0962,0.0962,,4.35,
+5,2,20.0,0.0962,0.1154,3.178,4.35,1.37
+10,2,20.0,0.0962,0.1154,3.178,4.35,1.37
+15,2,20.0,0.0962,0.1154,3.178,4.35,1.37
+30,3,30.0,0.0962,0.125,2.658,4.35,1.64
+45,7,70.0,0.0962,0.1442,2.658,4.35,1.64

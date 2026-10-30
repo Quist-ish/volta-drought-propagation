@@ -1,0 +1,29 @@
+# Restricted data: never commit (GRDC data policy; CEDEX terms). See DATA.md.
+data/grdc_discharge_raw.csv
+*_Q_Day.Cmd.txt
+*cedex*
+*CEDEX*
+
+# Large inputs downloaded or rebuilt by the scripts
+/external/
+data/external/climate_indices/ersst_v5.nc
+data/external/gpcc_v2022_volta_05.nc
+data/external/ne110.zip
+data/external/cmip6/subsets/
+data/external/cmip6/pangeo-cmip6.csv
+data/external/cmip6/fetch_run.log
+data/reanalysis/Q_daily.parquet
+output_reanalysis/tables/SSI_daily.parquet
+
+# Rendered figures (copied to figures/ under the article numbers by collect_final_figures.py)
+figures_pub/out/
+output_*/figures/
+
+# Python and notebook state
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+venv/
+.venv/
+*.log

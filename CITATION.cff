@@ -1,0 +1,122 @@
+cff-version: 1.2.0
+message: "If you use this software or these data, please cite both the article and this archive."
+title: "volta-drought-propagation: code and derived data for sparse-gauge tests of drought propagation in the Volta Basin"
+abstract: >-
+  Code and derived data for a study of hydrological drought propagation in the Volta Basin above
+  Akosombo (18 GRDC gauges, 1961-2007; GPCC rainfall 1951-2020; 16 CMIP6 models). The scripts
+  (i) test for change points and trends in rainfall, drought synchrony and runoff at fixed
+  rainfall; (ii) relate basin drought to six climate indices with wavelet coherence, seasonal
+  correlations and event-rate models; (iii) match daily SSI drought events between linked gauges
+  with observation-conditioned measures, an availability-aware permutation null, equivalence
+  tests against the Ebro Basin, identifiability and synthetic-truth experiments and a GEOGLOWS v2
+  reanalysis network; and (iv) drive a leakage-free hybrid wavelet-machine learning transfer
+  model with bias-adjusted CMIP6 output to project drought risk and the monitoring horizon needed
+  to test propagation. GRDC daily discharge is not redistributed.
+type: software
+version: 2.0.0
+date-released: "2026-10-30"
+license: MIT
+keywords:
+  - hydrological drought
+  - drought propagation
+  - Volta Basin
+  - Sahelian regime shift
+  - wavelet coherence
+  - Atlantic Nino
+  - Atlantic Multidecadal Oscillation
+  - CMIP6
+  - monitoring network design
+  - Standardised Streamflow Index
+  - GEOGLOWS
+  - runoff efficiency
+  - intermittent rivers
+  - observing-network design
+authors:
+  - family-names: Quist
+    given-names: Ishmeal
+    affiliation: "School of Law and Public Administration, Nanjing University of Information Science and Technology"
+    orcid: "https://orcid.org/0009-0009-0739-0359"
+    email: quistishmeal@nuist.edu.cn
+  - family-names: Evi
+    given-names: Millicent
+    affiliation: "School of Management Science and Engineering, Nanjing University of Information Science and Technology"
+    orcid: "https://orcid.org/0009-0003-8354-7094"
+  - family-names: Owusu
+    given-names: Alex Barimah
+    affiliation: "Department of Geography and Resource Development, University of Ghana"
+    orcid: "https://orcid.org/0000-0001-8331-9364"
+  - family-names: Quist
+    given-names: Benjamin Nana Yaw
+    affiliation: "Department of Computer Science, Koforidua Technical University"
+    orcid: "https://orcid.org/0009-0004-1846-672X"
+preferred-citation:
+  type: article
+  status: submitted
+  authors:
+    - family-names: Quist
+      given-names: Ishmeal
+    - family-names: Evi
+      given-names: Millicent
+    - family-names: Owusu
+      given-names: Alex Barimah
+    - family-names: Quist
+      given-names: Benjamin Nana Yaw
+  title: "Regime shift, rising runoff efficiency and sparse gauging: limits to testing drought propagation in a Sahel–savanna landscape"
+  journal: "CATENA"
+  year: 2026
+references:
+  - type: article
+    authors:
+      - family-names: Crespillo López
+        given-names: Alex
+      - family-names: Vicente-Serrano
+        given-names: Sergio M.
+      - family-names: Gimeno
+        given-names: Luis
+    title: "Tracking hydrological drought propagation in river networks: an event-based framework"
+    journal: "Journal of Hydrology"
+    volume: 680
+    start: 136544
+    year: 2026
+    doi: "10.1016/j.jhydrol.2026.136544"
+  - type: software
+    authors:
+      - family-names: Crespillo López
+        given-names: Alex
+    title: "Code_v.1: Tracking hydrological drought propagation in river networks"
+    version: "v2.0"
+    year: 2026
+    doi: "10.5281/zenodo.22755834"
+  - type: data
+    authors:
+      - family-names: Schneider
+        given-names: Udo
+      - family-names: Hänsel
+        given-names: Stephanie
+      - family-names: Finger
+        given-names: Peter
+      - family-names: Rustemeier
+        given-names: Elke
+      - family-names: Ziese
+        given-names: Markus
+    title: "GPCC Full Data Monthly Product Version 2022 at 0.5°"
+    year: 2022
+    doi: "10.5676/DWD_GPCC/FD_M_V2022_050"
+  - type: article
+    authors:
+      - family-names: Hales
+        given-names: Riley C.
+      - name: "et al."
+    title: "Advancing global hydrologic modeling with the GEOGloWS ECMWF streamflow service"
+    journal: "Journal of Flood Risk Management"
+    year: 2025
+    doi: "10.1111/jfr3.12859"
+  - type: article
+    authors:
+      - family-names: Huang
+        given-names: Boyin
+      - name: "et al."
+    title: "Extended Reconstructed Sea Surface Temperature, version 5 (ERSSTv5): upgrades, validations, and intercomparisons"
+    journal: "Journal of Climate"
+    year: 2017
+    doi: "10.1175/JCLI-D-16-0836.1"

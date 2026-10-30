@@ -1,0 +1,16 @@
+{
+  "store": "s3://geoglows-v2/retrospective/daily.zarr",
+  "store_time_range": [
+    "1940-01-01",
+    "2026-09-30"
+  ],
+  "period_read": [
+    "1950-01-01",
+    "2025-12-31"
+  ],
+  "reaches": 257,
+  "missing": [],
+  "negative_values": 0,
+  "nan_values": 0,
+  "retrieved": "2026-10-14"
+}

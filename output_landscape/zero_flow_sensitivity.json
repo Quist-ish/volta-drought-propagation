@@ -1,0 +1,29 @@
+{
+ "dropped": {
+  "1531100": [
+   1999,
+   2007
+  ],
+  "1531550": [
+   1988,
+   1996
+  ]
+ },
+ "events_removed": 20,
+ "baseline": {
+  "n_opportunities": 40.0,
+  "n_connected": 10.0,
+  "n_pairs": 10.0,
+  "cf_all": 0.09615384615384616,
+  "cf_opp": 0.25,
+  "p_link": 0.16169345135041874
+ },
+ "without_zero_flow_years": {
+  "n_opportunities": 24.0,
+  "n_connected": 7.0,
+  "n_pairs": 7.0,
+  "cf_all": 0.08333333333333333,
+  "cf_opp": 0.2916666666666667,
+  "p_link": 0.1607799823829002
+ }
+}

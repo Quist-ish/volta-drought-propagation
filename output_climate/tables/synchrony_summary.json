@@ -1,0 +1,11 @@
+{
+ "sync_clim_mean_1961_2007": 0.15573286052009458,
+ "sync_origin_events_median": 0.2777777777777778,
+ "sync_connected_median": 0.4444444444444444,
+ "sync_unconnected_median": 0.2777777777777778,
+ "mw_connected_vs_unconnected_p": 0.132318435948596,
+ "mw_origin_vs_climatology_p": 3.428947182772734e-11,
+ "n_connected": 10,
+ "n_unconnected": 30,
+ "basin_spi12_ar1": 0.9494335454992382
+}
