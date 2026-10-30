@@ -2,7 +2,7 @@
   "title": "volta-drought-propagation: code and derived data for sparse-gauge tests of drought propagation in the Volta Basin (v2.0.0)",
   "upload_type": "software",
   "version": "2.0.0",
-  "publication_date": "2026-10-30",
+  "publication_date": "2026-10-31",
   "description": "<p>Code and derived data for the article <em>Regime shift, rising runoff efficiency and sparse gauging: limits to testing drought propagation in a Sahel–savanna landscape</em> (I. Quist, M. Evi, A.B. Owusu and B.N.Y. Quist, submitted to CATENA).</p><p>The study covers the Volta Basin above Akosombo (18 GRDC gauges, 1961&ndash;2007; GPCC rainfall, 1951&ndash;2020; 16 CMIP6 models). The scripts (i) test for change points and trends in rainfall, drought synchrony and runoff at fixed rainfall; (ii) relate basin drought to six climate indices with wavelet coherence, seasonal correlations and event-rate models; (iii) match daily SSI drought events between linked gauges with observation-conditioned measures, an availability-aware permutation null, equivalence tests against the Ebro Basin, identifiability and synthetic-truth experiments and a 129-node GEOGLOWS v2 reanalysis network; and (iv) drive a leakage-free hybrid wavelet&ndash;machine learning transfer model with bias-adjusted CMIP6 output to project drought risk and the monitoring horizon needed to test propagation.</p><p><code>reproduce.sh</code> regenerates every derived table and figure from the raw inputs; <code>verify_manuscript_numbers.py</code> checks the reported numbers against the shipped tables; a continuous-integration workflow re-runs the checksum, number and test checks on every change; <code>MANIFEST.md</code> maps each table and figure of the article and its Supplementary Material to its source file and script. GRDC daily discharge is not redistributed (see DATA.md); all other inputs are open and are downloaded by the scripts. Code: MIT licence. Derived data, tables and figures: CC BY 4.0 (LICENSE-DATA).</p>",
   "creators": [
     {
@@ -47,6 +47,12 @@
   ],
   "notes": "Derived data, tables and figures are licensed CC BY 4.0 (LICENSE-DATA); third-party inputs keep their providers' terms (DATA.md). The daily discharge records of the Global Runoff Data Centre are not included.",
   "related_identifiers": [
+    {
+      "identifier": "https://github.com/Quist-ish/volta-drought-propagation/tree/v2.0.0",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    },
     {
       "identifier": "10.1016/j.jhydrol.2026.136544",
       "relation": "references",

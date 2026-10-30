@@ -1,12 +1,15 @@
 # volta-drought-propagation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23813801.svg)](https://doi.org/10.5281/zenodo.23813801)
+[![verify](https://github.com/Quist-ish/volta-drought-propagation/actions/workflows/verify.yml/badge.svg)](https://github.com/Quist-ish/volta-drought-propagation/actions/workflows/verify.yml)
+
 Code and derived data for
 
 > Quist, I., Evi, M., Owusu, A.B., Quist, B.N.Y. Regime shift, rising runoff efficiency and sparse gauging: limits to testing drought propagation in a Sahel–savanna landscape.
 > Submitted to *CATENA*.
 
-Release v2.0.0. The archived version of this repository has the DOI given in `CITATION.cff`
-once it is minted on Zenodo.
+Release v2.0.0, archived on Zenodo at https://doi.org/10.5281/zenodo.23813801. The repository is maintained at
+https://github.com/Quist-ish/volta-drought-propagation.
 
 ## What the study asks, and where each answer is computed
 
@@ -86,7 +89,7 @@ coefficients, signatures and summary statistics).
 
 ## Citation
 
-Cite the article and this archive (`CITATION.cff`). The event-matching framework is that of
+Cite the article and this archive (https://doi.org/10.5281/zenodo.23813801; `CITATION.cff`). The event-matching framework is that of
 Crespillo López, Vicente-Serrano and Gimeno (2026), *Journal of Hydrology* 680, 136544
 (https://doi.org/10.1016/j.jhydrol.2026.136544); their code and catalogue are archived at
 https://doi.org/10.5281/zenodo.22755834.

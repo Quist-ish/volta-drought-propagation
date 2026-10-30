@@ -1,6 +1,8 @@
 # Changelog
 
-## v2.0.0 (30 October 2026): release for the CATENA submission
+## v2.0.0 (31 October 2026): release for the CATENA submission
+
+Archived on Zenodo: https://doi.org/10.5281/zenodo.23813801. Repository: https://github.com/Quist-ish/volta-drought-propagation.
 
 Accompanies *Regime shift, rising runoff efficiency and sparse gauging: limits to testing drought propagation in a Sahel–savanna landscape*.
 
