@@ -49,7 +49,7 @@ tables and the article agree.
 ## Full reproduction
 
 ```bash
-./reproduce.sh <folder with the GRDC *_Q_Day.Cmd.txt files>
+bash reproduce.sh <folder with the GRDC *_Q_Day.Cmd.txt files>
 ```
 
 `reproduce.sh` runs the whole analysis in order, from the raw inputs to the figures, and ends with

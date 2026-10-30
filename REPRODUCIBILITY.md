@@ -48,7 +48,7 @@ by Level 1 unchanged. Every figure except Figs. S5 and S19 can be redrawn this w
 ## 4. Level 3: full run from the raw inputs
 
 ```bash
-./reproduce.sh <folder with the GRDC *_Q_Day.Cmd.txt files>
+bash reproduce.sh <folder with the GRDC *_Q_Day.Cmd.txt files>
 ```
 
 Inputs: GRDC daily discharge must be requested from the GRDC (see `DATA.md`); all other inputs are
